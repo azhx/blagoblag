@@ -9,8 +9,8 @@ Hi, you've reached my website. I'm Alex Gaynor. Here's some facts about me:
 * I work for the United States Digital Service. Content on this blog does not
   represent the views of my employer.
 * I write a lot of open source code.
-* I've previous served as a director of the Python Software Foundation and
-  Django Software Foundation.
+* I previously served as a director of both the Python Software Foundation and
+  the Django Software Foundation.
 * I live in Washington D.C., but I'm originally from Chicago. I spent about two
   and a half years living in San Francisco.
 * I like delis and bagels.
