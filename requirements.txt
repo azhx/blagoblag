@@ -22,7 +22,6 @@ rst2pdf==0.93
 Twisted==16.5.0
 zope.interface==4.3.2     # via twisted
 
-# The following packages are commented out because they are
-# considered to be unsafe in a requirements file:
+# The following packages are considered to be unsafe in a requirements file:
 # pip                       # via reportlab
 # setuptools                # via reportlab, rst2pdf, zope.interface
