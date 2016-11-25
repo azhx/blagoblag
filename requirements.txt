@@ -19,7 +19,7 @@ Pygments==2.1.3           # via liquidluck, rst2pdf
 PyYAML==3.12              # via liquidluck
 reportlab==3.3.0          # via rst2pdf
 rst2pdf==0.93
-Twisted==16.5.0
+Twisted==16.6.0
 zope.interface==4.3.2     # via twisted
 
 # The following packages are considered to be unsafe in a requirements file:
