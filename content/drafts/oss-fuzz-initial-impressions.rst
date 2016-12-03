@@ -27,7 +27,7 @@ you'll need:
 * A ``Dockerfile`` which clones the source and gets everything in order.
 * A ``build.sh`` which compiles the library you want to test, and your fuzzing
   program.
-* And the fuzzer itself: a C++ function,
+* And the driver: a C++ function,
   ``LLVMFuzzerTestOneInput(const uint8_t *, size_t)``.
 
 You can also optionally include a corpus of seed files and a dictionary. For
