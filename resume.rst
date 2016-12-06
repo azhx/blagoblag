@@ -30,7 +30,7 @@ Stuff I've done
 Work
 ----
 
-* **Digital Services Expert**, United States Digital Service
+* **Software Engineer**, United States Digital Service
   *January 2015 -*
 * **Director**, Python Software Foundation
   *April 2013 - June 2016*
