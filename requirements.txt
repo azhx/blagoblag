@@ -20,7 +20,7 @@ PyYAML==3.12              # via liquidluck
 reportlab==3.3.0          # via rst2pdf
 rst2pdf==0.93
 Twisted==16.6.0
-zope.interface==4.3.2     # via twisted
+zope.interface==4.3.3     # via twisted
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip                       # via reportlab
