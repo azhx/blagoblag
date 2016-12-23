@@ -25,6 +25,6 @@ my old PGP key fingerprint is::
 
     E27D 4AA0 1651 72CB C5D2  AF2B 125F 5C67 DFE9 4084
 
-My `resume is available`_, though I'm not looking for work at present.
+My `resume is available`_.
 
 .. _`resume is available`: /resume.pdf
