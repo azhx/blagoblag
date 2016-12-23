@@ -27,7 +27,7 @@ About me
   substantial features and refactorings to a web framework (`Django`_ core
   developer), co-chaired a conference program committee (`PyCon`_), and been a
   member of the Board of Directors for the Python Software Foundation.
-* Advocated for and implemeneted improvements to the Python HTTPS/TLS stack,
+* Advocated for and implemented improvements to the Python HTTPS/TLS stack,
   notably backporting significant improvements from Python 3 to Python 2 and
   enabling certificate validation by default.
 * I'm comfortable with high stress/high ambiguity work. I've worked on projects
