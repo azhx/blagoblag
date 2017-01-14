@@ -9,7 +9,7 @@ constantly==15.1.0        # via twisted
 docopt==0.6.2             # via liquidluck
 docutils==0.13.1          # via liquidluck, rst2pdf
 incremental==16.10.1      # via twisted
-Jinja2==2.9.1             # via liquidluck
+Jinja2==2.9.4             # via liquidluck
 liquidluck==3.8.1
 MarkupSafe==0.23          # via jinja2
 misaka==2.0.0             # via liquidluck
