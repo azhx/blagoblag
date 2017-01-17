@@ -12,7 +12,7 @@ incremental==16.10.1      # via twisted
 Jinja2==2.9.4             # via liquidluck
 liquidluck==3.8.1
 MarkupSafe==0.23          # via jinja2
-misaka==2.0.0             # via liquidluck
+misaka==2.1.0             # via liquidluck
 olefile==0.44             # via pillow
 pdfrw==0.3                # via rst2pdf
 pillow==4.0.0             # via reportlab
