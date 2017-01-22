@@ -31,7 +31,7 @@ Work
 ----
 
 * **Software Engineer**, United States Digital Service
-  *January 2015 -*
+  *January 2015 - January 2017*
 * **Director**, Python Software Foundation
   *April 2013 - June 2016*
 * **Software Engineer**, Rackspace
