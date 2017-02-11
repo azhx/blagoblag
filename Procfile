@@ -1,1 +1,1 @@
-web: twistd -n web --path=deploy/ --port=$PORT --mime-type="application/octet-stream"
+web: twist web --path=deploy/ --port="tcp:$PORT" --mime-type="application/octet-stream"
