@@ -49,6 +49,6 @@ using HTTP.
        free certificates.
 
 .. _`Kenneth Love`: http://gigantuan.net/
-.. _`attacker on the network`: http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/
+.. _`attacker on the network`: https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/
 .. _`StartSSL`: https://www.startssl.com/
 .. _`CloudFlare`: https://www.cloudflare.com
