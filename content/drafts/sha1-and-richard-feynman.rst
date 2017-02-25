@@ -55,7 +55,8 @@ For a long time, using MD5 here was very common. It wasn't until 2015 with the
 
 Do we have a practical attack against using SHA1 here today? No. But attacks
 only get better, and if we want to fix the entire web ecosystem, we should
-start before the attacks are perfect, not once it's already an emergency.
+start before the attacks are perfect, not once it's already an emergency;
+particularly since there's no downsides.
 
 To make this plea actionable: check to make sure your servers aren't using
 SHA1! You can check which signature algorithm your server is using with the
