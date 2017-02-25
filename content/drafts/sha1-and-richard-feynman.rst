@@ -21,8 +21,8 @@ have with respect to SHA1, and other cryptographic breaks.
 
 Lots of people see a practical collision attack and say, "well actually, the
 thing you really care about is second pre-image resistance". I see a practical
-collision attack and say, "the claimed properties of this algorithm no longer
-hold, it is mathematically broken for all cryptographic purposes".
+collision attack and say, "the fundamental properties of this algorithm no
+longer hold, it is mathematically broken for all cryptographic purposes".
 
 I come to this conclusion for two reasons. One is the age old adage amongst
 cryptographers: attacks only get stronger.
