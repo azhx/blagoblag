@@ -67,12 +67,12 @@ OpenSSL command line:
     $ HOST=google.com
     $ PORT=443
     $ echo | \
-        /usr/local/opt/openssl/bin/openssl s_client -connect $HOST:$PORT -servername $HOST 2>1 | \
+        openssl s_client -connect $HOST:$PORT -servername $HOST 2>1 | \
         grep "Peer signing"
     Peer signing digest: SHA256
 
-(Change the path to OpenSSL as required, this doesn't work with the OpenSSL
-included with macOS, use the one from `Homebrew`_).
+(This doesn't work with the OpenSSL included with macOS, use the one from
+`Homebrew`_).
 
 You can also use Censys to take a look at a `list of the servers that still use
 SHA1`_.
