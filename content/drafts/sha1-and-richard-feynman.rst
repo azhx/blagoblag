@@ -34,7 +34,8 @@ analysis easier, and to make our systems more resilient to partial failures.
 
 Sometimes competing design considerations mean that we use imperfect
 cryptographic constructions. However, whenever "compromise-free" choices are
-available to us, we should be using them.
+available to us, we should be using them. We must distinguish between "not
+known to be *totally* broken" and "believed to be secure".
 
 Allow me to illustrate with an example. When it comes to TLS, the usage of SHA1
 that gets the most attention is for certificate signatures: for several years
