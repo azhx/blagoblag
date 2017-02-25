@@ -40,9 +40,9 @@ Allow me to illustrate with an example. When it comes to TLS, the usage of SHA1
 that gets the most attention is for certificate signatures: for several years
 now, the browser ecosystem (led by Microsoft and Google) has been working to
 remove SHA1 signed certificates from the ecosystem, with good success. However,
-there's another use of SHA1: in a TLS connection, the server uses its private
-key to sign the handshake, proving the relationship between the certificate and
-the server.
+there's another use of hashing: in a TLS connection, the server uses its
+private key to sign the handshake, proving the relationship between the
+certificate and the server.
 
 In TLS 1.0 and 1.1, the hash used here is a concatenation of MD5 and SHA1. In
 TLS 1.2 and above, the client and the server negotiate which hashing algorithm
