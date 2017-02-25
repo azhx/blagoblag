@@ -67,7 +67,7 @@ OpenSSL command line:
     $ HOST=google.com
     $ PORT=443
     $ echo | \
-        openssl s_client -connect $HOST:$PORT -servername $HOST 2>1 | \
+        openssl s_client -connect $HOST:$PORT -servername $HOST 2>&1 | \
         grep "Peer signing"
     Peer signing digest: SHA256
 
