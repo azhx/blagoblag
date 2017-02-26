@@ -81,7 +81,7 @@ SHA1`_. The fix for this is to upgrade whatever hardware or software you using
 for terminating TLS.
 
 Remember, attacks only get better, there's too much interesting work in this
-wold to spend your days figuring out whether it's safe to use known broken
+world to spend your days figuring out whether it's safe to use known broken
 primitives, and a cracked bridge has no safety factor.
 
 
