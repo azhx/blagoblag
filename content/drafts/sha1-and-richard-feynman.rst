@@ -68,9 +68,8 @@ OpenSSL command line:
 
     $ HOST=google.com
     $ PORT=443
-    $ echo | \
-        openssl s_client -connect $HOST:$PORT -servername $HOST 2>&1 | \
-        grep "Peer signing"
+    $ openssl s_client -connect $HOST:$PORT -servername $HOST -sigalgs 'RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512' 2>&1 < /dev/null | \
+        grep "Peer signing" || echo "Peer signing digest: SHA1"
     Peer signing digest: SHA256
 
 (This doesn't work with the OpenSSL included with macOS, use the one from
