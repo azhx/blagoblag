@@ -51,8 +51,7 @@ to use. About 93% of the Alexa Top Million websites will successfully negotiate
 SHA256 or better, but about 7% of these servers will still chose SHA1, even if
 the client supports newer and better things. [#]_
 
-For a long time, using MD5 here was very common. It wasn't until 2015 with the
-`SLOTH attack`_ that we fixed up the MD5 usage.
+Until 2015 with the `SLOTH attack`_, MD5 was still widely supported here.
 
 Do we have a practical attack against using SHA1 here today? No. But attacks
 only get better, and if we want to fix the entire web ecosystem, we should
