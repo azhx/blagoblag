@@ -85,7 +85,7 @@ world to spend your days figuring out whether it's safe to use known broken
 primitives, and a cracked bridge has no safety factor.
 
 
-.. [#] Numbers found using `censys.io`_
+.. [#] Numbers found using `censys.io`_.
 .. [#] There's an `open ticket`_ to have `SSL Labs`_ report on this.
 
 .. _`SLOTH attack`: https://www.mitls.org/pages/attacks/SLOTH
