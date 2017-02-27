@@ -66,7 +66,7 @@ OpenSSL command line:
 .. code-block:: console
 
     $ digest() {
-    >     openssl s_client -connect $HOST:$PORT -servername $HOST -sigalgs 'RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512' 2>&1 < /dev/null | grep "Peer signing" || echo "Peer signing digest: SHA1"
+    >     openssl s_client -connect $1:$443 -servername $1 -sigalgs 'RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512' 2>&1 < /dev/null | grep "Peer signing" || echo "Peer signing digest: SHA1"
     > }
     $ digest google.com
     Peer signing digest: SHA256
