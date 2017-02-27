@@ -78,7 +78,7 @@ OpenSSL command line:
 
 You can also use Censys to take a look at a `list of the servers that still use
 SHA1`_. The fix for this is to upgrade whatever hardware or software you using
-for terminating TLS.
+for terminating TLS. [#]_
 
 Remember, attacks only get better, there's too much interesting work in this
 world to spend your days figuring out whether it's safe to use known broken
@@ -86,8 +86,11 @@ primitives, and a cracked bridge has no safety factor.
 
 
 .. [#] Numbers found using `censys.io`_
+.. [#] There's an `open ticket`_ to have `SSL Labs`_ report on this.
 
 .. _`SLOTH attack`: https://www.mitls.org/pages/attacks/SLOTH
 .. _`Homebrew`: https://brew.sh/
 .. _`list of the servers that still use SHA1`: https://censys.io/domain?q=443.https.tls.signature.hash_algorithm%3Asha1
 .. _`censys.io`: https://censys.io
+.. _`open ticket`: https://github.com/ssllabs/ssllabs-scan/issues/465
+.. _`SSL Labs`: https://www.ssllabs.com/
