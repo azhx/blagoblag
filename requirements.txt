@@ -23,7 +23,7 @@ pillow==4.0.0             # via reportlab
 Pygments==2.2.0           # via liquidluck, rst2pdf
 pyparsing==2.2.0          # via packaging
 PyYAML==3.12              # via liquidluck
-reportlab==3.3.0          # via rst2pdf
+reportlab==3.4.0          # via rst2pdf
 rst2pdf==0.93
 six==1.10.0               # via automat, packaging, setuptools
 Twisted==17.1.0
