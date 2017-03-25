@@ -9,7 +9,7 @@ privacy and show no regard for whether bytes make their way to me unmodified.
 Over the past year, I've seen several websites that used to top this list
 migrate to ``https://``, for example Amazon, Netflix, and the Washington Post.
 
-Here's the top 25 worst HTTP offenders (grouped by brand)! If you work for one
+Here's the top 25 worst HTTP offenders, grouped by brand. If you work for one
 of these sites, offering HTTPS should be a top priority. If you're not sure
 why, watch `this talk on MOAR TLS`_ from earlier this year.
 
