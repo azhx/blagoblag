@@ -9,20 +9,26 @@ lots of stuff in between.
 The languages, and constructs, this post will be looking at are:
 
 * C
+
   * Segfaults
   * Returning / out pointer error codes
 * Erlang
+
   * Pattern matching
   * Exceptions
   * Crashing
 * Python
+
   * Exceptions
 * Java
+
   * Exceptions
 * Rust
+
   * ``Option`` and ``Result`` types
   * Task failures
 * Go
+
   * panic/defer
   * error
 
