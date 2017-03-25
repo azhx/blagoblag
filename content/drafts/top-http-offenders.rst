@@ -72,7 +72,7 @@ Basketball Reference
 Facebook
 --------
 
-Facebook itself is all ``https://``, but this one Akamai-hosted domain isn't
+Facebook itself is all ``https://``, but this domain isn't
 
 * ``static.ak.fbcdn.net``
 
