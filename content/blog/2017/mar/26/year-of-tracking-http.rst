@@ -1,5 +1,5 @@
-A year of tracking my http:// requests
-======================================
+A year of tracking my HTTP requests
+===================================
 
 For a year or so I've been running a `Chrome extension I wrote`_, which tracks
 which origins my Chrome makes the most ``http://`` requests to, in an effort to
