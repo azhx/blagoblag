@@ -2,18 +2,19 @@ A year of tracking my ``http://`` requests
 ==========================================
 
 For a year or so I've been running a `Chrome extension I wrote`_, which tracks
-which origins I make the most ``http://`` requests to, in an effort to be more
-data driven. Websites that top this list are disrespectful of my privacy and
-show no regard for whether bytes make their way to me unmodified.
+which origins my Chrome makes the most ``http://`` requests to, in an effort to
+make my ``https://`` advocacy more data driven. Websites that top this list are
+disrespectful of my privacy and show no regard for whether bytes make their way
+to me unmodified.
 
 Over the past year, I've seen several websites that used to top this list
 migrate to ``https://``, for example Amazon, Netflix, and the Washington Post.
-I commend them on making the migration!
+I commend them on making the migration and protecting my privacy!
 
-Here's the top 25 origins which receive the most ``http://`` requests, grouped
-by brand. If you work for one of these sites, offering HTTPS should be a top
-priority. If you're not sure why, watch `this talk on MOAR TLS`_ from earlier
-this year.
+Here are the current top 25 origins which receive the most ``http://``
+requests, grouped by brand. If you work for one of these sites, offering HTTPS
+should be a top priority. If you're not sure why, watch `this talk on MOAR
+TLS`_ from earlier this year.
 
 These sites represent the biggest opportunity to improve the percentage of
 requests I make which are ``https://``, so I'm hopeful they will begin and
