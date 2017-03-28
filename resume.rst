@@ -30,6 +30,8 @@ Stuff I've done
 Work
 ----
 
+* **Staff Software Engineer**, Mozilla
+  *March 2017 -*
 * **Software Engineer**, United States Digital Service
   *January 2015 - January 2017*
 * **Director**, Python Software Foundation
