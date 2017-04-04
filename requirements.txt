@@ -19,7 +19,7 @@ misaka==2.1.0             # via liquidluck
 olefile==0.44             # via pillow
 packaging==16.8           # via setuptools
 pdfrw==0.3                # via rst2pdf
-pillow==4.0.0             # via reportlab
+pillow==4.1.0             # via reportlab
 pygments==2.2.0           # via liquidluck, rst2pdf
 pyparsing==2.2.0          # via packaging
 pyyaml==3.12              # via liquidluck
