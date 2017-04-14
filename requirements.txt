@@ -4,7 +4,6 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-appdirs==1.4.3            # via setuptools
 attrs==16.3.0             # via automat
 automat==0.5.0            # via twisted
 cffi==1.10.0              # via misaka
@@ -17,18 +16,12 @@ liquidluck==3.8.1
 markupsafe==1.0           # via jinja2
 misaka==2.1.0             # via liquidluck
 olefile==0.44             # via pillow
-packaging==16.8           # via setuptools
 pdfrw==0.3                # via rst2pdf
 pillow==4.1.0             # via reportlab
 pygments==2.2.0           # via liquidluck, rst2pdf
-pyparsing==2.2.0          # via packaging
 pyyaml==3.12              # via liquidluck
 reportlab==3.4.0          # via rst2pdf
 rst2pdf==0.93
-six==1.10.0               # via automat, packaging, setuptools
+six==1.10.0               # via automat
 twisted==17.1.0
 zope.interface==4.3.3     # via twisted
-
-# The following packages are considered to be unsafe in a requirements file:
-# pip                       # via reportlab
-# setuptools                # via reportlab, rst2pdf, zope.interface
