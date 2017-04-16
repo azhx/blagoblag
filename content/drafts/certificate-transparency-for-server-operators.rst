@@ -14,7 +14,7 @@ certificates ever issued. That's where Certificate Transparency comes in.
 This post won't go into the details of how Certificate Transparency works, but
 the short version is that people (can be CAs, server operators, or anyone else)
 can submit certificates to a log, and the log provides cryptographic guarnatees
-that once something is submitted, it can't be removed.
+that once something is submitted, it can't be removed without being detected.
 
 Certificate Transparency provides a huge boon for the ecosystem, because it
 makes it easier to discover misissuance and other challenges. Chrome began
