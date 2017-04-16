@@ -20,7 +20,7 @@ Certificate Transparency provides a huge boon for the ecosystem, because it
 makes it easier to discover misissuance and other challenges. Chrome began
 requiring Certificate Transparency for EV certificates in January 2015.
 Following misissuance by Symantec, `Chrome began requiring Ceritifcate
-Transparency for Symantec certificates`_ in 2016. And Google has stated that
+Transparency for Symantec certificates`_ in 2016. And Chrome has stated that
 they plan to make Certificate Transparency required for all certificates
 starting in October 2017.
 
@@ -56,8 +56,8 @@ serving the SCTs. There are three ways of doing this:
 2) Embed the SCTs in your TLS handshake
 3) Embed the SCTs in a stapled OCSP response
 
-You can see if you are serving SCTs from the Google Chrome Developer Tools,
-Security Tab:
+You can see if you are serving SCTs from the Chrome Developer Tools, Security
+Tab:
 
 .. image:: /images/chrome-devtools-scts.png
     :align: center
