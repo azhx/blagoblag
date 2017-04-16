@@ -52,7 +52,8 @@ serving the SCTs. There are three ways of doing this:
 You can see if you are serving SCTs from the Google Chrome Developer Tools,
 Security Tab:
 
-.. image::
+.. image:: /images/chrome-devtools-scts.png
+    :align: center
 
 There exist modules for both `Apache`_ and `Nginx`_ to enable option (2).
 Unfortunately the tooling here is still a little raw. I'm hopeful that popular
