@@ -40,6 +40,13 @@ submitted receives a Signed Certificate Timestamp (SCT). SCTs are cryptographic
 assertions that a certificate has been submitted to a log, and will be publicly
 visible in the log shortly.
 
+There's one small extra detail. In addition to anyone (you, your CA, someone
+just crawling the web) being able to submit certificates to Certificate
+Transparency logs, the CA issuing your certificate can also submit what's
+called a "pre-certificate" to the log. A pre-certificate can be submitted just
+before isusing the certificate itself, and it lets you embed the SCTs directly
+into the certificate. Only your CA is able to do this.
+
 Now that your certificate is included in a log, you'll want to serve your SCTs
 to people who access your website. Just being included in a log is not
 sufficient to meet Chrome's Certificate Transparency requirement, you must be
@@ -54,6 +61,9 @@ Security Tab:
 
 .. image:: /images/chrome-devtools-scts.png
     :align: center
+
+If your CA has embedded SCTs in the certificate itself, your work is done. If
+not, you'll need to configure (2) or (3).
 
 There exist modules for both `Apache`_ and `Nginx`_ to enable option (2).
 Unfortunately the tooling here is still a little raw. I'm hopeful that popular
