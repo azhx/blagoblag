@@ -65,7 +65,10 @@ Tab:
 If your CA has embedded SCTs in the certificate itself, your work is done. If
 not, you'll need to configure (2) or (3).
 
-There exist modules for both `Apache`_ and `Nginx`_ to enable option (2).
+There exist modules for both `Apache`_ and `Nginx`_ to enable option (2). Both
+Apache and Nginx natively support stapling OCSP responses for (3), but it
+requires your CA to participate, by including SCTs in their OCSP responses.
+
 Unfortunately the tooling here is still a little raw. I'm hopeful that popular
 webservers will get support for handling SCTs automatically. It should be
 possible for servers to do this without requiring any additional configuration
