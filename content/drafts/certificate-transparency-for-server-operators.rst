@@ -20,9 +20,9 @@ Certificate Transparency provides a huge boon for the ecosystem, because it
 makes it easier to discover misissuance and other challenges. Chrome began
 requiring Certificate Transparency for EV certificates in January 2015.
 Following misissuance by Symantec, `Chrome began requiring Ceritifcate
-Transparency for Symantec certificates`_ in 2016. And Google has announced that
-Certificate Transparency will be required for all certificates starting in
-October 2017.
+Transparency for Symantec certificates`_ in 2016. And Google has stated that
+they plan to make Certificate Transparency required for all certificates
+starting in October 2017.
 
 This post will review the tooling around Certificate Transparency that exists
 for server operators.
