@@ -50,7 +50,7 @@ into the certificate. Only your CA is able to do this.
 Now that your certificate is included in a log, you'll want to serve your SCTs
 to people who access your website. Just being included in a log is not
 sufficient to meet Chrome's Certificate Transparency requirement, you must be
-serving the SCTs. There are three ways of doing this:
+serving the SCTs [#]_. There are three ways of doing this:
 
 1) Embed the SCTs in your certificate (your CA has to do this)
 2) Embed the SCTs in your TLS handshake
@@ -80,6 +80,12 @@ domain. Two choices for CT monitor are `Facebook`_ and `Cert Spotter`_. Both
 are pretty simple, enter a domain name and you'll be notified when a
 certificate is issued for that domain (including subdomains).
 
+
+.. [#] You might be wondering why browsers don't just contact the logs, instead
+       making servers provide the SCTs? Your browser contacting the logs for
+       every website you visit introduces a privacy concern, now the log can
+       see every website you visit, and also a performance concern, you have an
+       extra set of network round trips for every site you visit.
 
 .. _`Chrome began requiring Ceritifcate Transparency for Symantec certificates`: https://security.googleblog.com/2015/10/sustaining-digital-certificate-security.html
 .. _`crt.sh`: https://crt.sh/
