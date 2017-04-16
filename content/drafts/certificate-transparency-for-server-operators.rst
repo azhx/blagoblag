@@ -1,5 +1,5 @@
-Certificate Transparency for Server Operators
-=============================================
+Introduction to Certificate Transparency for Server Operators
+=============================================================
 
 Say you've got a website, and because you care about protecting the privacy of
 your visitors and the integrity of the content you serve to them, your website
