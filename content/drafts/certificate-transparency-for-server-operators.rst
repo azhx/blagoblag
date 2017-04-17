@@ -35,8 +35,8 @@ it will show details about the certificate, including which logs it was
 submitted to. If it's not listed, you can submit your certificate to a log
 yourself, though doing so is outside the scope of this article.
 
-When a certificate is submmitted to a Certificate Transparecy log, the
-submitted receives a Signed Certificate Timestamp (SCT). SCTs are cryptographic
+When a certificate is submitted to a Certificate Transparecy log, the submitted
+receives a Signed Certificate Timestamp (SCT). SCTs are cryptographic
 assertions that a certificate has been submitted to a log, and will be publicly
 visible in the log shortly.
 
