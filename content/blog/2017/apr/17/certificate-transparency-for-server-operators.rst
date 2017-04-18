@@ -44,7 +44,7 @@ There's one small extra detail. In addition to anyone (you, your CA, someone
 just crawling the web) being able to submit certificates to Certificate
 Transparency logs, the CA issuing your certificate can also submit what's
 called a "pre-certificate" to the log. A pre-certificate can be submitted just
-before isusing the certificate itself, and it lets you embed the SCTs directly
+before issuing the certificate itself, and it lets you embed the SCTs directly
 into the certificate. Only your CA is able to do this.
 
 Now that your certificate is included in a log, you'll want to serve your SCTs
