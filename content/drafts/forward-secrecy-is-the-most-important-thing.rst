@@ -3,7 +3,7 @@ Forward secrecy is the most important thing
 
 An alternate title for this post would be "Why GPG isn't ok in 2017".
 
-Imaging you were designing a new encrypted messaging system, what kinds of
+Imagine you were designing a new encrypted messaging system, what kinds of
 things would you worry about? You'd want to make sure you were using good
 encryption algorithms, authentication for senders, a high quality random number
 generator, maybe you'd spend some time thinking about side channels for things
@@ -48,7 +48,7 @@ of a website's certificate, so it can't just be thrown away. And if somewhere
 down the line, maybe even years, the key gets stolen, the attack can go back in
 time and decrypt all the traffic.
 
-Wait what!? Imaging you make a TLS connection to a server with the RSA key
+Wait what!? Imagine you make a TLS connection to a server with the RSA key
 exchange, you encrypt your record key to the server, you send some data, you
 get some data, you go on your merry way. While you're doing that, an attacker
 records all your TCP traffic. They can't do anything with it of course, it's
