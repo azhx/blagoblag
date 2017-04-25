@@ -95,9 +95,9 @@ lying around for years, putting my privacy at risk.
 
 It's popular to make fun of the security guarnatees of SnapChat, since they're
 in no way resistant to a malicious chatting partner. But the ability to
-securely, and meanignfully, delete messages in a huge win for many threat
+securely, and meanignfully, delete messages is a huge win for many threat
 models. Whether you're a dissident whose phone is being searched by a
-repressive regime, or a White House employee whose phone is being search by
+repressive regime, or a White House employee whose phone is being searchd by
 your boss, you want to be able to delete your messages.
 
 And this is why I say GPG encryption isn't ok in 2017, there's no ability to
