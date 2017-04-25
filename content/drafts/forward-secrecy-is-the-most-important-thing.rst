@@ -108,3 +108,5 @@ which offer no forward secrecy. If you're designing a new secure messaging
 system, use forward secure protocols to protect your users' privacy. If you're
 choosing a messaging system to use, stick to ones with a forward secure
 protocol (such as Signal) to protect *your* privacy.
+
+.. _`HeartBleed`: http://heartbleed.com/
