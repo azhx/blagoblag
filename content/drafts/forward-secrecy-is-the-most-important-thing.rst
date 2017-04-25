@@ -36,7 +36,7 @@ widely deployed) of these protocols is the Signal Protocol, which is used by
 Signal and WhatsApp. The Signal protocol uses the Diffie Hellman key exchange
 to achieve Forward Secrecy. This means that every message is encrypted with a
 fresh key, and then that key is thrown away. An ephemeral key exchange is used
-to get the key to your peer, but all of it's parameters can also be thrown away
+to get the key to your peer, but all of its parameters can also be thrown away
 as soon as it's finished. Morever, the Signal protocol does one of these on
 *every single message* you send. This means if I steal the key used to encrypt
 one of your messages, I can't decrypt anything that came before it (I can
