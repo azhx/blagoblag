@@ -109,4 +109,7 @@ system, use forward secure protocols to protect your users' privacy. If you're
 choosing a messaging system to use, stick to ones with a forward secure
 protocol (such as Signal) to protect *your* privacy.
 
+PS: You can `donate to support Signal's development`_.
+
 .. _`HeartBleed`: http://heartbleed.com/
+.. _`donate to support Signal's development`: https://freedom.press/crowdfunding/signal/
