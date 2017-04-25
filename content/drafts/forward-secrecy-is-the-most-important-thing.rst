@@ -36,9 +36,9 @@ still has an RSA public key, but now it's only used for the signature.
 Why do we prefer this second one, you might ask? It sounds a bit more
 complicated, we've got two kinds of keys instead of just one, and besides,
 encrypting things with RSA public keys and then decrypting them with private
-keys is solid crypto. The algorithm is solid, if we use modern key size, it's
-strong against any attacker, no one can decrypt these messages or crack the
-key.
+keys is solid crypto. The algorithm is solid, if we use modern key size and
+padding it's strong against any attacker, no one can decrypt these messages or
+crack the key.
 
 The answer is in forward secrecy. In the Diffie Hellman version, for each
 connection the server and client generate new keys, so as soon as the
