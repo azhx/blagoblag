@@ -46,7 +46,7 @@ connection is done, they can throw them away. In the RSA key exchange, we're
 encrypting things for the servers *long term* public key. The RSA key is a part
 of a website's certificate, so it can't just be thrown away. And if somewhere
 down the line, maybe even years, the key gets stolen, the attack can go back in
-time and decrypt all the traffi.
+time and decrypt all the traffic.
 
 Wait what!? Imaging you make a TLS connection to a server with the RSA key
 exchange, you encrypt your record key to the server, you send some data, you
