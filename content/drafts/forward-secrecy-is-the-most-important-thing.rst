@@ -11,81 +11,43 @@ like message length. Unfortunately, if you're thinking about your protocol in
 the context of something like email, it's very likely that you're not thinking
 about forward secrecy.
 
-Forward secrecy is a cryptographic property best known about in the context of
-TLS. TLS's cipher suites can be divided into two groups: ones that use RSA key
-exchange, and ones that use Diffie Hellman key exchange.
-
-TLS connections are divided into two phases, a handshake phase, where the
-server and client agree on a key and perform some authentication, and the
-record phase where the contents of the connection are transferred (e.g. your
-HTTPS requests and responses).
-
-When the RSA key exchange is used, the way the client and server agree on a key
-is that the client randomly generates a new key, and then encrypts it to the
-server's public key. The server uses its corresponding private key to decrypt
-the message. Now both sides have the same key, which they use to encrypt
-messages in the record phase. The server will also sign the contents of the
-handshake, to prove it's the same person as its certificate says.
-
-In the Diffie Hellman key exchange, things work a little bit differently. Here,
-both the client and server will generate a new Diffie Hellman public/private
-keypair. Then both sides will send their public keys to the other, and each
-side performs the Diffie Hellman algorithm to compute a shared key. The server
-still has an RSA public key, but now it's only used for the signature.
-
-Why do we prefer this second one, you might ask? It sounds a bit more
-complicated, we've got two kinds of keys instead of just one, and besides,
-encrypting things with RSA public keys and then decrypting them with private
-keys is solid crypto. The algorithm is solid, if we use modern key size and
+GPG's cryptographic model is centered around long-term RSA keys. I get your
+public key from a keyserver, I generate a random AES key and encrypt that key
+with your public key, and then I encrypt my email with the AES key. When you
+receive my email, you decrypt the AES key with your RSA private key, and then
+you decrypt the contents with the AES key. So what's the problem? RSA is a
+solid algorithm, AES is a solid algorithm, if we use modern key size and
 padding it's strong against any attacker, no one can decrypt these messages or
 crack the key.
 
-The answer is in forward secrecy. In the Diffie Hellman version, for each
-connection the server and client generate new keys, so as soon as the
-connection is done, they can throw them away. In the RSA key exchange, we're
-encrypting things for the servers *long term* public key. The RSA key is a part
-of a website's certificate, so it can't just be thrown away. And if somewhere
-down the line, maybe even years, the key gets stolen, the attack can go back in
-time and decrypt all the traffic.
-
-Wait what!? Imagine you make a TLS connection to a server with the RSA key
-exchange, you encrypt your record key to the server, you send some data, you
-get some data, you go on your merry way. While you're doing that, an attacker
-records all your TCP traffic. They can't do anything with it of course, it's
-all encrypted and the crypto is solid. A year later, `HeartBleed`_ happens. The
-same attacker uses HeartBleed to steal the server's private key, and uses that
-to go back in time and decrypt your traffic from a year ago.
-
-If the server was using Diffie Hellman, you'd have been fine, the RSA key is
-used for signatures only with Diffie Hellman, and a year later your
-connection's keys are nowhere to be found in memory. But RSA key exchange put
-you at risk. Forward secrecy means using your long term keys only for
-authentication, encryption should always use short term keys.
-
-As a result, the web has been working hard to get servers to migrate from  RSA
-key exchange to Diffie Hellman. The upcoming TLS 1.3 standard doesn't even
-support RSA key exchanges anymore.
-
-So, it's a clear win for TLS. What's this got to do with GPG encrypted emails?
-GPG uses the same model as the RSA key exchange, except worse! In GPG, you get
-your peer's public key from a keyserver, then you generate a random AES key,
-encrypt the AES key with the RSA public key, and then encrypt my email with the
-AES key. It has the exact same problem, if your RSA key is compromised, even
-years later, if you have the ciphertext, you can decrypt the message. What
-makes this even worse than TLS? People tend to rotate their GPG keys incredibly
-infrequently, a person's GPG key might be in use for a decade or more.
+The problem is that if anything happens to our private key, even years later,
+it can ruin the confidentiality of our messages. Imagine you send someone a GPG
+encrypted email. Someone's recording all your TCP traffic, but it's not a big
+deal because the message is encrypted. Then a year later, your friend's hard
+drive gets stolen, and with it their GPG key. Now our attacker can use that to
+go back in time a year and decrypt the email in the recorded traffic from a
+year ago. People tend to rotate their GPG keys incredible infrequently
+(arguably, this behavior is *incentivized* by the web of trust model, which
+demands a persistent key), so these keys live for a decade or more, putting all
+the data encrypted with them at risk.
 
 Luckily, modern message protocols solve this problem. The most famous (and
 widely deployed) of these protocols is the Signal Protocol, which is used by
 Signal and WhatsApp. The Signal protocol uses the Diffie Hellman key exchange
-on *every single message* you send. This means if I steal the key used to
-encrypt one of your messages, I can't decrypt anything that came before it (I
-can decrypt things that come after it though). There's also *no* long term key
-you can steal and decrypt *everything* with.
+to achieve Forward Secrecy. This means that every message is encrypted with a
+fresh key, and then that key is thrown away. An ephemeral key exchange is used
+to get the key to your peer, but all of it's parameters can also be thrown away
+as soon as it's finished. Morever, the Signal protocol does one of these on
+*every single message* you send. This means if I steal the key used to encrypt
+one of your messages, I can't decrypt anything that came before it (I can
+decrypt things that come after it though). There's also *no* long term key you
+can steal and decrypt *everything* with. Because of this, forward secrecy is
+often defined as using long term keys for authentication, and short term keys
+for encryption.
 
-However, I still think I've undersold the importance of forward secrecy.
-Because forward secrecy means being able to delete your message. Right now, if
-I delete an email that's been GPG encrypted to mean, I haven't *really* deleted
+However, I think this undersells the importance of forward secrecy. Because
+forward secrecy means being able to delete your message. Right now, if I delete
+an email that's been GPG encrypted to mean, I haven't *really* deleted
 anything. The attacker who steals my email still has it (there's always an
 attacker, that's why I encrypt things). The only way to make sure that email is
 gone for good is for me to delete my GPG private key permanently. With a
@@ -99,6 +61,12 @@ securely, and meaningfully, delete messages is a huge win for many threat
 models. Whether you're a dissident whose phone is being searched by a
 repressive regime, or a White House employee whose phone is being searchd by
 your boss, you want to be able to delete your messages.
+
+The TLS ecosystem has been making this exact migration to protect user privacy.
+Current versions of TLS offer two forms of key exchange, RSA key exchanges with
+this major drawback, and Diffie Hellman key exchanges which offer forward
+secrecy. The upcoming TLS 1.3 specification completely drops the RSA key
+exchange, making TLS always forward secure.
 
 And this is why I say GPG encryption isn't ok in 2017, there's no ability to
 delete messages without deleting my key, and deleting things is critical to
