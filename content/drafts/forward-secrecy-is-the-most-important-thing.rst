@@ -11,14 +11,14 @@ like message length. Unfortunately, if you're thinking about your protocol in
 the context of something like email, it's very likely that you're not thinking
 about forward secrecy.
 
-GPG's cryptographic model is centered around long-term RSA keys. I get your
-public key from a keyserver, I generate a random AES key and encrypt that key
-with your public key, and then I encrypt my email with the AES key. When you
-receive my email, you decrypt the AES key with your RSA private key, and then
-you decrypt the contents with the AES key. So what's the problem? RSA is a
-solid algorithm, AES is a solid algorithm, if we use modern key size and
-padding it's strong against any attacker, no one can decrypt these messages or
-crack the key.
+GPG is a textbook example of this. GPG's cryptographic model is centered around
+long-term RSA keys. I get your public key from a keyserver, I generate a random
+AES key and encrypt that key with your public key, and then I encrypt my email
+with the AES key. When you receive my email, you decrypt the AES key with your
+RSA private key, and then you decrypt the contents with the AES key. So what's
+the problem? RSA is a solid algorithm, AES is a solid algorithm, if we use
+modern key size and padding it's strong against any attacker, no one can
+decrypt these messages or crack the key.
 
 The problem is that if anything happens to our private key, even years later,
 it can ruin the confidentiality of our messages. Imagine you send someone a GPG
