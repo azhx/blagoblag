@@ -55,7 +55,7 @@ forward secure messaging system, I can delete any messages I want and as long
 as my chatting partner deletes them as well, they're gone for good, no keys
 lying around for years, putting my privacy at risk.
 
-It's popular to make fun of the security guarnatees of SnapChat, since they're
+It's popular to make fun of the security guarantees of SnapChat, since they're
 in no way resistant to a malicious chatting partner. But the ability to
 securely, and meaningfully, delete messages is a huge win for many threat
 models. Whether you're a dissident whose phone is being searched by a
