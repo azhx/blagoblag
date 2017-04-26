@@ -47,7 +47,7 @@ for encryption.
 
 However, I think this undersells the importance of forward secrecy. Because
 forward secrecy means being able to delete your message. Right now, if I delete
-an email that's been GPG encrypted to mean, I haven't *really* deleted
+an email that's been GPG encrypted to me, I haven't *really* deleted
 anything. The attacker who steals my email still has it (there's always an
 attacker, that's why I encrypt things). The only way to make sure that email is
 gone for good is for me to delete my GPG private key permanently. With a
