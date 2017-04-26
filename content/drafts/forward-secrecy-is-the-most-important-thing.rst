@@ -59,7 +59,7 @@ It's popular to make fun of the security guarantees of SnapChat, since they're
 in no way resistant to a malicious chatting partner. But the ability to
 securely, and meaningfully, delete messages is a huge win for many threat
 models. Whether you're a dissident whose phone is being searched by a
-repressive regime, or a White House employee whose phone is being searchd by
+repressive regime, or a White House employee whose phone is being searched by
 your boss, you want to be able to delete your messages.
 
 The TLS ecosystem has been making this exact migration to protect user privacy.
