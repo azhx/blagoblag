@@ -21,15 +21,15 @@ modern key size and padding it's strong against any attacker, no one can
 decrypt these messages or crack the key.
 
 The problem is that if anything happens to our private key, even years later,
-it can ruin the confidentiality of our messages. Imagine you send someone a GPG
-encrypted email. Someone's recording all your TCP traffic, but it's not a big
-deal because the message is encrypted. Then a year later, your friend's hard
-drive gets stolen, and with it their GPG key. Now our attacker can use that to
-go back in time a year and decrypt the email in the recorded traffic from a
-year ago. People tend to rotate their GPG keys incredible infrequently
-(arguably, this behavior is *incentivized* by the web of trust model, which
-demands a persistent key), so these keys live for a decade or more, putting all
-the data encrypted with them at risk.
+it can ruin the confidentiality of our messages. Imagine I send you a GPG
+encrypted email. Someone's recording all of my TCP traffic, but it's not a big
+deal because the message is encrypted. Then a year later, your hard drive gets
+stolen, and with it your GPG key. Now our attacker can use that to go back in
+time a year and decrypt the email in the recorded traffic from a year ago.
+People tend to rotate their GPG keys incredible infrequently (arguably, this
+behavior is *incentivized* by the web of trust model, which demands a
+persistent key), so these keys live for a decade or more, putting all the data
+encrypted with them at risk.
 
 Luckily, modern message protocols solve this problem. The most famous (and
 widely deployed) of these protocols is the Signal Protocol, which is used by
