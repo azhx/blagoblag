@@ -24,4 +24,4 @@ reportlab==3.4.0          # via rst2pdf
 rst2pdf==0.93
 six==1.10.0               # via automat
 twisted==17.1.0
-zope.interface==4.4.0     # via twisted
+zope.interface==4.4.1     # via twisted
