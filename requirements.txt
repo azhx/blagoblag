@@ -10,7 +10,7 @@ cffi==1.10.0              # via misaka
 constantly==15.1.0        # via twisted
 docopt==0.6.2             # via liquidluck
 docutils==0.13.1          # via liquidluck, rst2pdf
-incremental==17.5.0      # via twisted
+incremental==17.5.0       # via twisted
 jinja2==2.9.6             # via liquidluck
 liquidluck==3.8.1
 markupsafe==1.0           # via jinja2
