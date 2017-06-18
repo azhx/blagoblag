@@ -10,6 +10,7 @@ cffi==1.10.0              # via misaka
 constantly==15.1.0        # via twisted
 docopt==0.6.2             # via liquidluck
 docutils==0.13.1          # via liquidluck, rst2pdf
+hyperlink==17.2.1         # via twisted
 incremental==17.5.0       # via twisted
 jinja2==2.9.6             # via liquidluck
 liquidluck==3.8.1
@@ -23,5 +24,5 @@ pyyaml==3.12              # via liquidluck
 reportlab==3.4.0          # via rst2pdf
 rst2pdf==0.93
 six==1.10.0               # via automat
-twisted==17.1.0
+twisted==17.5.0
 zope.interface==4.4.2     # via twisted
