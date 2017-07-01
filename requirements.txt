@@ -18,7 +18,7 @@ markupsafe==1.0           # via jinja2
 misaka==2.1.0             # via liquidluck
 olefile==0.44             # via pillow
 pdfrw==0.3                # via rst2pdf
-pillow==4.1.1             # via reportlab
+pillow==4.2.0             # via reportlab
 pygments==2.2.0           # via liquidluck, rst2pdf
 pyyaml==3.12              # via liquidluck
 reportlab==3.4.0          # via rst2pdf
