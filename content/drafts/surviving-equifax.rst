@@ -4,18 +4,19 @@ Surviving Equifax
 If you're a software engineer or work in tech, there's a decent chance that
 your first thought after hearing about the Equifax breach was "oh my god, how
 incompetent do you have to be to get owned like that?" Don't worry, I had the
-same reaction. However, a few days of introspection and reviewing the evidence,
-and I've come to the conclusion that Equifax made one giant, avoidable,
-mistake: not upgrading Struts immediately after a remote-code-execution
-vulnerability was disclosed in it. Everything else about this breach was an
-inevitably consequence of that, my best bet is 497 of the Fortune 500 couldn't
-survive that mistake either.
+same reaction. After a few days of introspection and reviewing the evidence,
+I've come to the conclusion that Equifax made one giant, avoidable, mistake:
+not upgrading Struts immediately after a remote-code-execution vulnerability
+was disclosed in it. Everything else about this breach was an inevitably
+consequence of that mistake, combined with their internal architecture. My best
+bet is 497 of the Fortune 500 couldn't survive that mistake either. "Just
+upgrade" is both valuable advice, and not particularly interesting to explore.
+What if we wanted to design a system that could withstand this mistake?
 
-What if you wanted to be able to survive that mistake? Or better yet, what if
-you wanted to you wanted to survive *unknown mistakes*? Equifax screwed up
-huge, because there was a known RCE and they didn't patch, however for many
-years before that there was an unknown RCE, and if the person who discovered it
-had been motivated differently, companies could have been exploited without
+Or better yet, what if we wanted to survive *unknown mistakes*? Equifax screwed
+up huge because there was a known RCE and they didn't patch, however for many
+years before that there was an unknown RCE. If the person who discovered it had
+been motivated differently, companies could have been exploited without
 warning. What would we have to do to survive that situation?
 
 I have no particular insider information on what Equifax's environment looks
@@ -26,21 +27,17 @@ They've got a VPC in us-east-1, and some EC2 instances in it, maybe even in a
 few different availability zones. If they've really got it together, the EC2
 instances are spawned by an Auto Scaling Group. Each AZ's EC2 instances are in
 a security group, and the only things with ingress to the SG is an ELB, in
-HTTP/HTTPS mode and a bastion server. The bastion server is a well patched
-Linux installation, and allows SSH access only. SSH keys live on YubiKeys that
-our startup purchases for employees, and which SSH keys are in
-`authorized_keys` is managed by configuration management. EC2 instances have
-private IPs only, but can access the internet through a NAT gateway. The
-application uses an DS PostgreSQL database, it has full disk encryption
-enabled, requires TLS for connections, and is accessibly exclusively via our
-security groups.
+HTTP/HTTPS mode and a bastion server. EC2 instances have private IPs only, but
+can access the internet through a NAT gateway. The application uses an RDS
+PostgreSQL database, it has full disk encryption enabled, requires TLS for
+connections, and is accessibly exclusively via our security groups.
 
 This is a pretty well put together infrastructure for a startup. And if the EC2
-instances were running an out of date copy of Struts, it would be game over.
-Once you had RCE, you'd grab the DB credentials from disk, from an environment
-variable, or right out of memory if you had to. Pump the DB for data, and then
-ship it off network, you could even upload it to S3 if you want the outbound
-traffic to be clandestine. Pwned.
+instances were running an out of date copy of Struts, it would be game over for
+our startup. Once an attacker had RCE, they'd grab the DB credentials from
+disk, from an environment variable, or right out of memory if they had to. Pump
+the DB for data, and then ship it off network, they could even upload it to S3
+if you want the outbound traffic to be clandestine. Pwned.
 
 Now, perhaps there are things on the detection front that could be done to
 allow us to notice slightly more quickly than the amount of time it takes to
@@ -52,9 +49,9 @@ There's two routes I see to making our system resilient. One involves some
 crypto, the other involves a distributed system (and a tiny bit of crypto). The
 ground rules we'll use when analyzing our proposed solutions: 1) No degrading
 the functionality of our application, 2) We assume our attacker has an RCE
-against Struts, but no other exploits, anything else our attacker accomplishes
-should be via design flaw, 3) We're trying to prevent stealing 143 million
-records, not stealing 14 records.
+against Struts but no other exploits, anything else they accomplish should be
+via design flaw, 3) We're trying to prevent stealing 143 million records, not
+stealing 14 records.
 
 With those rules, let us forge ahead!
 
