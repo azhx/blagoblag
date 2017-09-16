@@ -41,19 +41,19 @@ if you want the outbound traffic to be clandestine. Pwned.
 
 Now, perhaps there are things on the detection front that could be done to
 allow us to notice slightly more quickly than the amount of time it takes to
-ship 143 million people's data off the network, but I'm going to ignore that. I
-want to explore just what it would take to make this foot hold of arbitrary
-code execution on our application web server useless.
+ship 143 million people's data off the network, but I'm not going to focus on
+that. I want to explore just what it would take to make this foot hold of
+arbitrary code execution on our application web server useless.
 
 There's two routes I see to making our system resilient. One involves some
 crypto, the other involves a distributed system (and a tiny bit of crypto). The
 ground rules we'll use when analyzing our proposed solutions: 1) No degrading
 the functionality of our application, 2) We assume our attacker has an RCE
 against Struts but no other exploits, anything else they accomplish should be
-via design flaw, 3) We're trying to prevent stealing 143 million records, not
-stealing 14 records.
+inherent in our design, 3) We're trying to prevent stealing 143 million
+records, not stealing 14 records.
 
-With those rules, let us forge ahead!
+With those rules, let's forge ahead!
 
 The one with crypto
 -------------------
