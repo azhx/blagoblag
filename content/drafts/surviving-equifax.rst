@@ -210,8 +210,8 @@ If you want to explore more into these topics, I recommend reading up on
 grow mature open source frameworks for building systems like these, in the same
 way Django and other web frameworks provided defenses against XSS, SQL
 injection, and CSRF out of the box. In the meantime, the next time you go to
-mock Equifax, ask yourself if your systems could survive an RCE on your web
-server. And if not, do you at least know when your dependencies have critical
+mock Equifax, ask yourself: could your systems survive an RCE on your web
+server? And if not, do you at least know when your dependencies have critical
 security vulnerabilities?
 
 .. _`GRPC`: https://grpc.io/
