@@ -188,7 +188,12 @@ exploit which got onto our service could be used to get into the login or
 backend service, so we need to use a different technology stack. This is
 reasonable. Building applications for the public web involves a lot of
 complexity, internal services can makes a lot of simplifying assumptions, and
-so an RPC framework like `GRPC`_ or `Apache Thrift`_ makes more sense.
+so an RPC framework like `GRPC`_ or `Apache Thrift`_ makes more sense. Even if
+we don't use a different technology stack, this intermediate service gives us a
+valuable vantage point for additional monitoring; for example, while a public
+server can expect to receive many many invalid requests everyday, an internal
+server is not, so aggressive logging of invalid requests gives us an
+opportunity to catch our attacker exploring the attack surface.
 
 Conclusion
 ----------
