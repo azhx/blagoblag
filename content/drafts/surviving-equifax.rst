@@ -199,17 +199,20 @@ Conclusion
 ----------
 
 We've just designed two alternate architectures that make us resillient to RCE
-in our web application, a vulnerability like the one in Apache Struts which was
+in our web application. A vulnerability like the one in Apache Struts which was
 Equifax's downfall can no longer be used to steal all of our data. We've also
-seen that it's difficult, both of these designs are objectively more complex
+seen that it's difficult; both of these designs are objectively more complex
 than the one we started with, and require expertise in distributed systems and
 cryptography. That sort of talent is unfortunately rare.
 
 If you want to explore more into these topics, I recommend reading up on
-`Kerberos`_ and `Macaroons`_ (XXX: more examples?). In the meantime, the next
-time you go to mock Equifax, ask yourself if your systems could survive an RCE
-on your web server. And if not, do you at least know when your dependencies
-have critical security vulnerabilities?
+`Kerberos`_ and `Macaroons`_ (XXX: more examples?). I hope that eventually we
+grow mature open source frameworks for building systems like these, in the same
+way Django and other web frameworks provided defenses against XSS, SQL
+injection, and CSRF out of the box. In the meantime, the next time you go to
+mock Equifax, ask yourself if your systems could survive an RCE on your web
+server. And if not, do you at least know when your dependencies have critical
+security vulnerabilities?
 
 .. _`GRPC`: https://grpc.io/
 .. _`Apache Thrift`: https://thrift.apache.org/
