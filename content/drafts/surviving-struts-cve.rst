@@ -1,5 +1,5 @@
-Surviving Equifax
-=================
+Surviving Apache Struts CVE-2017-5638
+=====================================
 
 If you're a software engineer or work in tech, there's a decent chance that
 your first thought after hearing about the Equifax breach was "oh my god, how
