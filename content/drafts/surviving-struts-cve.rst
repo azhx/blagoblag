@@ -203,7 +203,9 @@ in our web application. A vulnerability like the one in Apache Struts which was
 Equifax's downfall can no longer be used to steal all of our data. We've also
 seen that it's difficult; both of these designs are objectively more complex
 than the one we started with, and require expertise in distributed systems and
-cryptography. That sort of talent is unfortunately rare.
+cryptography. That sort of talent is unfortunately rare. While this post
+focused on prevention, it's important to recognize that detection and incident
+response are critical components of a complete security strategy.
 
 If you want to explore more into these topics, I recommend reading up on
 `Kerberos`_ and `Macaroons`_ (XXX: more examples?). I hope that eventually we
