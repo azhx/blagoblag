@@ -47,7 +47,7 @@ monitoring or incident response. I want to explore just what it would take to
 make this foot hold of arbitrary code execution on our application web server
 useless.
 
-There's two routes I see to making our system resilient. One involves some
+There are two routes I see to making our system resilient. One involves some
 crypto, the other involves a distributed system (and a tiny bit of crypto). The
 ground rules we'll use when analyzing our proposed solutions: 1) No degrading
 the functionality of our application, 2) We assume our attacker has an RCE
@@ -67,7 +67,7 @@ without a key management scheme that matches our threat model.
 
 This fact should be evident from our problem description: we already had full
 disk encryption enabled on our RDS database and TLS for data in transit! And of
-course they nothing in this attack scenario, full disk encryption protects
+course they do nothing in this attack scenario, full disk encryption protects
 against someone with access to the physical disk or the raw block device, not
 someone able to interact with the database; at that level the data has already
 been decrypted. Any encryption scheme where the keys for every single row are
