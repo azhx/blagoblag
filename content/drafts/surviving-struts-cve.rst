@@ -5,13 +5,13 @@ If you're a software engineer or work in tech, there's a decent chance that
 your first thought after hearing about the Equifax breach was "oh my god, how
 incompetent do you have to be to get owned like that?" Don't worry, I had the
 same reaction. After a few days of introspection and reviewing the evidence,
-I've come to the conclusion that Equifax made one uncommon mistake: not
-upgrading Struts immediately after a remote-code-execution vulnerability was
-disclosed in it; everything else about the situation was exceptionally common.
-My best bet is 497 of the Fortune 500 couldn't survive that mistake either.
-"Just upgrade" is both valuable advice, and not particularly interesting to
-explore. What if we wanted to design a system that could withstand this
-mistake?
+I've come to the conclusion that Equifax made one uncommonly disasterous
+mistake: not upgrading Struts immediately after a remote-code-execution
+vulnerability was disclosed in it; everything else about the situation was
+exceptionally common. My best bet is 497 of the Fortune 500 couldn't survive
+that mistake either. "Just upgrade" is both valuable advice, and not
+particularly interesting to explore. What if we wanted to design a system that
+could withstand this mistake?
 
 Or better yet, what if we wanted to survive *unknown mistakes*? Equifax screwed
 up huge because there was a known RCE and they didn't patch, however for many
