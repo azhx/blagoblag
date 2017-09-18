@@ -5,19 +5,21 @@ If you're a software engineer or work in tech, there's a decent chance that
 your first thought after hearing about the Equifax breach was "oh my god, how
 incompetent do you have to be to get owned like that?" Don't worry, I had the
 same reaction. After a few days of introspection and reviewing the evidence,
-I've come to the conclusion that Equifax made one giant, avoidable, mistake:
-not upgrading Struts immediately after a remote-code-execution vulnerability
-was disclosed in it. Everything else about this breach was an inevitable
-consequence of that mistake, combined with their internal architecture. My best
-bet is 497 of the Fortune 500 couldn't survive that mistake either. "Just
-upgrade" is both valuable advice, and not particularly interesting to explore.
-What if we wanted to design a system that could withstand this mistake?
+I've come to the conclusion that Equifax made one uncommon mistake: not
+upgrading Struts immediately after a remote-code-execution vulnerability was
+disclosed in it; everything else about the situation was exceptionally common.
+My best bet is 497 of the Fortune 500 couldn't survive that mistake either.
+"Just upgrade" is both valuable advice, and not particularly interesting to
+explore. What if we wanted to design a system that could withstand this
+mistake?
 
 Or better yet, what if we wanted to survive *unknown mistakes*? Equifax screwed
 up huge because there was a known RCE and they didn't patch, however for many
-years before that there was an unknown RCE. If the person who discovered it had
-been motivated differently, companies could have been exploited without
-warning. What would we have to do to survive that situation?
+years before that there was an unknown RCE. But they, and many other companies,
+also screw up by not having an architecture which is resllient to such
+mistakes. If the person who discovered the Apache Struts vulnerability had been
+motivated differently companies could have been exploited without warning. What
+would we have to do to survive that situation?
 
 I have no particular insider information on what Equifax's environment looks
 like (or any of the Fortune 500's for that matter), but let's imagine they look
