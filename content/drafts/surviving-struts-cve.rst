@@ -60,8 +60,8 @@ The one with crypto
 
 Immediately following a breach the battle cry of the uninformed is always the
 same, "just encrypt it!". A little knowledge can be dangerous, serious security
-practitioners know that encryption means nothing without a key management
-scheme that matches our threat model.
+practitioners know that even the strongest encryption algorithm means nothing
+without a key management scheme that matches our threat model.
 
 This fact should be evident from our problem description: we already had full
 disk encryption enabled on our RDS database! And of course it does nothing in
