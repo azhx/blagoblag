@@ -7,7 +7,7 @@ incompetent do you have to be to get owned like that?" Don't worry, I had the
 same reaction. After a few days of introspection and reviewing the evidence,
 I've come to the conclusion that Equifax made one giant, avoidable, mistake:
 not upgrading Struts immediately after a remote-code-execution vulnerability
-was disclosed in it. Everything else about this breach was an inevitably
+was disclosed in it. Everything else about this breach was an inevitable
 consequence of that mistake, combined with their internal architecture. My best
 bet is 497 of the Fortune 500 couldn't survive that mistake either. "Just
 upgrade" is both valuable advice, and not particularly interesting to explore.
@@ -21,7 +21,7 @@ warning. What would we have to do to survive that situation?
 
 I have no particular insider information on what Equifax's environment looks
 like (or any of the Fortune 500's for that matter), but let's imagine they look
-like what a reasonably savy startup using AWS does:
+like what a reasonably savvy startup using AWS does:
 
 They've got a VPC in us-east-1, and some EC2 instances in it, maybe even in a
 few different availability zones. If they've really got it together, the EC2
@@ -171,7 +171,7 @@ signed cookies to you, that's because they are.
 
 One small snag, right now our login page is part of our main application
 server, so the box that our attacker is on has ``K``. We can solve this by
-moving the login process -- validating a user's password and generates a
+moving the login process -- validating a user's password and generating a
 principal -- into its own service. Now the web application server has no
 ability to generate principals to authorize requests to the backend service.
 Problem solved!
@@ -191,14 +191,14 @@ complexity, internal services can makes a lot of simplifying assumptions, and
 so an RPC framework like `GRPC`_ or `Apache Thrift`_ makes more sense. Even if
 we don't use a different technology stack, this intermediate service gives us a
 valuable vantage point for additional monitoring; for example, while a public
-server can expect to receive many many invalid requests everyday, an internal
+server can expect to receive many invalid requests everyday, an internal
 server is not, so aggressive logging of invalid requests gives us an
 opportunity to catch our attacker exploring the attack surface.
 
 Conclusion
 ----------
 
-We've just designed two alternate architectures that make us resillient to RCE
+We've just designed two alternate architectures that make us resilient to RCE
 in our web application. A vulnerability like the one in Apache Struts which was
 Equifax's downfall can no longer be used to steal all of our data. We've also
 seen that it's difficult; both of these designs are objectively more complex
