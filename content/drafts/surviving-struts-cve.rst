@@ -24,13 +24,12 @@ like (or any of the Fortune 500's for that matter), but let's imagine they look
 like what a reasonably savvy startup using AWS does:
 
 They've got a VPC in us-east-1, and some EC2 instances in it, maybe even in a
-few different availability zones. If they've really got it together, the EC2
-instances are spawned by an Auto Scaling Group. Each AZ's EC2 instances are in
-a security group, and the only things with ingress to the SG is an ELB, in
-HTTP/HTTPS mode and a bastion server. EC2 instances have private IPs only, but
-can access the internet through a NAT gateway. The application uses an RDS
-PostgreSQL database, it has full disk encryption enabled, requires TLS for
-connections, and is accessibly exclusively via our security groups.
+few different availability zones. Each AZ's EC2 instances are in a security
+group, and the only things with ingress to the SG is an ELB, in HTTP/HTTPS mode
+and a bastion server. EC2 instances have private IPs only, but can access the
+internet through a NAT gateway. The application uses an RDS PostgreSQL
+database, it has full disk encryption enabled, requires TLS for connections,
+and is accessibly exclusively via our security groups.
 
 This is a pretty well put together infrastructure for a startup. And if the EC2
 instances were running an out of date copy of Struts, it would be game over for
@@ -208,7 +207,7 @@ focused on prevention, it's important to recognize that detection and incident
 response are critical components of a complete security strategy.
 
 If you want to explore more into these topics, I recommend reading up on
-`Kerberos`_ and `Macaroons`_ (XXX: more examples?). I hope that eventually we
+`Kerberos`_, `Macaroons`_, and `BeyondCorp`_. I hope that eventually we
 grow mature open source frameworks for building systems like these, in the same
 way Django and other web frameworks provided defenses against XSS, SQL
 injection, and CSRF out of the box. In the meantime, the next time you go to
@@ -220,3 +219,4 @@ security vulnerabilities?
 .. _`Apache Thrift`: https://thrift.apache.org/
 .. _`Kerberos`: https://web.mit.edu/kerberos/dialogue.html
 .. _`Macaroons`: https://air.mozilla.org/macaroons-cookies-with-contextual-caveats-for-decentralized-authorization-in-the-cloud/
+.. _`BeyondCorp`: https://cloud.google.com/beyondcorp/#researchPapers
