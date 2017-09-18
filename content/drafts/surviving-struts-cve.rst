@@ -143,10 +143,12 @@ removing the ability to read arbitrary records from the DB. To do that, we need
 to sever our application's access to the SQL database.
 
 We'll introduce a service oriented architecture; instead of our application
-directly executing SQL against the DB, we'll have a service in the middle that
-exposes APIs like ``get_user_for_ssn`` and executes SQL queries against the DB
-for us. Now from our application server we have no credentials to the SQL
-database, no ability to ``SELECT * FROM users`` and walk off with the data.
+directly executing SQL against the DB, we'll have a service, on it's own
+isolated machine, in the middle that exposes APIs like ``get_user_for_ssn`` and
+queries the DB for us. Now from our application server we have no credentials
+to the SQL database, no ability to ``SELECT * FROM users`` and walk off with
+the data -- it's critical that our service not expose any APIs that let an
+attacker run whatever SQL they want.
 
 Ooops, except the space of SSNs is small enough that given our
 ``get_user_for_ssn`` method, one can just enumerate all possible SSNs and query
@@ -166,7 +168,9 @@ that both the login page and our RPC server share. The login page generates a
 principal when a user logs in, and the RPC server validates the HMAC on
 requests, and then performs the authorization checks. These principals can't
 just be generated out of thin air, you need ``K``. If these look a lot like
-signed cookies to you, that's because they are.
+signed cookies to you, that's because they are (and just like with a web
+application's session, we could have also implemented this with a database
+shared between our login page and the RPC server).
 
 One small snag, right now our login page is part of our main application
 server, so the box that our attacker is on has ``K``. We can solve this by
