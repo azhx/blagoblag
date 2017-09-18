@@ -17,12 +17,12 @@ liquidluck==3.8.1
 markupsafe==1.0           # via jinja2
 misaka==2.1.0             # via liquidluck
 olefile==0.44             # via pillow
-pdfrw==0.3                # via rst2pdf
+pdfrw==0.4                # via rst2pdf
 pillow==4.2.1             # via reportlab
 pygments==2.2.0           # via liquidluck, rst2pdf
 pyyaml==3.12              # via liquidluck
 reportlab==3.4.0          # via rst2pdf
 rst2pdf==0.93
-six==1.10.0               # via automat
+six==1.11.0               # via automat
 twisted==17.5.0
 zope.interface==4.4.2     # via twisted
