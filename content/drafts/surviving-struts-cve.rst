@@ -25,16 +25,16 @@ I have no particular insider information on what Equifax's environment looks
 like (or any of the Fortune 500's for that matter), but let's imagine they look
 like what a reasonably savvy startup using AWS has:
 
-They've got a VPC in us-east-1, and some EC2 instances in it, maybe even in a
-few different availability zones. Each AZ's EC2 instances are in a security
-group, and the only things with ingress to the SG is an ELB, in HTTP/HTTPS mode
-and a bastion server. EC2 instances have private IPs only, but can access the
+They've got a VPC in us-east-1, and some EC2 instances in it, perhaps even in a
+multiple availability zones. Each AZ's EC2 instances are in a security group,
+and the only things with ingress to the SG is an ELB, in HTTP/HTTPS mode and a
+bastion server. EC2 instances have private IPs only, but can access the
 internet through a NAT gateway. The application uses an RDS PostgreSQL
 database, it has full disk encryption enabled, requires TLS for connections,
 and is accessibly exclusively via our security groups.
 
 This is a pretty well put together infrastructure for a startup. And if the EC2
-instances were running an out of date copy of Struts, it would be game over for
+instances were running a vulnerable copy of Struts, it would be game over for
 our startup. Once an attacker had RCE, they'd grab the DB credentials from
 disk, from an environment variable, or right out of memory if they had to. Pump
 the DB for data, and then ship it off network, they could even upload it to S3
@@ -43,8 +43,9 @@ if you want the outbound traffic to be clandestine. Pwned.
 Now, perhaps there are things on the detection front that could be done to
 allow us to notice slightly more quickly than the amount of time it takes to
 ship 143 million people's data off the network, but I'm not going to focus on
-that. I want to explore just what it would take to make this foot hold of
-arbitrary code execution on our application web server useless.
+monitoring or incident response. I want to explore just what it would take to
+make this foot hold of arbitrary code execution on our application web server
+useless.
 
 There's two routes I see to making our system resilient. One involves some
 crypto, the other involves a distributed system (and a tiny bit of crypto). The
@@ -65,12 +66,12 @@ practitioners know that even the strongest encryption algorithm means nothing
 without a key management scheme that matches our threat model.
 
 This fact should be evident from our problem description: we already had full
-disk encryption enabled on our RDS database! And of course it does nothing in
-this attack scenario, it protects against someone with access to the physical
-disk or the raw block device, not someone able to interact with the database;
-at that level the data has already been decrypted. Any encryption scheme where
-the keys for every single row are accessible from our web application will meet
-the same fate.
+disk encryption enabled on our RDS database and TLS for data in transit! And of
+course they nothing in this attack scenario, full disk encryption protects
+against someone with access to the physical disk or the raw block device, not
+someone able to interact with the database; at that level the data has already
+been decrypted. Any encryption scheme where the keys for every single row are
+accessible from our web application will meet the same fate.
 
 In short, we want to encrypt records under a key that is specific to that
 record, and which the application server does not have ambient access to, the
@@ -141,16 +142,16 @@ The one with a distributed system
 
 Our first approach was based on addressing the problem that with access to the
 DB, you could read all the records. This approach is going to be based on
-removing the ability to read arbitrary records from the DB. To do that, we need
-to sever our application's access to the SQL database.
+removing the ability to read arbitrary records from the DB from the web server.
+To do that, we need to sever our application's access to the SQL database.
 
-We'll introduce a service oriented architecture; instead of our application
-directly executing SQL against the DB, we'll have a service, on it's own
-isolated machine, in the middle that exposes APIs like ``get_user_for_ssn`` and
-queries the DB for us. Now from our application server we have no credentials
-to the SQL database, no ability to ``SELECT * FROM users`` and walk off with
-the data -- it's critical that our service not expose any APIs that let an
-attacker run whatever SQL they want.
+We'll introduce a service oriented architecture. Instead of our application
+directly executing SQL queries against the DB, we'll have a service, on its own
+isolated machine, that exposes APIs like ``get_user_for_ssn`` and queries the
+DB for us. Instead of our web server having credentials for and a connection to
+the database, it now has a connection to this backend RPC server. This means
+the web server has no ability to execute ``SELECT * FROM users`` and walk off
+with the data.
 
 Ooops, except the space of SSNs is small enough that given our
 ``get_user_for_ssn`` method, one can just enumerate all possible SSNs and query
@@ -192,13 +193,15 @@ If our backend services are built on Struts, we're still screwed. The same
 exploit which got onto our service could be used to get into the login or
 backend service, so we need to use a different technology stack. This is
 reasonable. Building applications for the public web involves a lot of
-complexity, internal services can makes a lot of simplifying assumptions, and
-so an RPC framework like `GRPC`_ or `Apache Thrift`_ makes more sense. Even if
-we don't use a different technology stack, this intermediate service gives us a
-valuable vantage point for additional monitoring; for example, while a public
-server can expect to receive many invalid requests everyday, an internal
-server is not, so aggressive logging of invalid requests gives us an
-opportunity to catch our attacker exploring the attack surface.
+complexity (HTML templates, ``Content-Type`` negotiation, localization, etc.).
+Internal services don't require any of this functionality and therefore can
+makes a lot of simplifying assumptions, so an RPC framework like `GRPC`_ or
+`Apache Thrift`_ makes more sense. Even if we don't use a different technology
+stack, this intermediate service gives us a valuable vantage point for
+additional monitoring; for example, while a public server can expect to receive
+many invalid requests everyday, an internal server is not, so aggressive
+logging of malformed requests gives us an opportunity to catch our attacker
+exploring the attack surface.
 
 Conclusion
 ----------
