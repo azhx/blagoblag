@@ -103,10 +103,10 @@ KMS. That was probably hard to follow, let's try some pseudo-code:
     raw_key = os.urandom(32)
     password_key = derive_key(password)
 
-    password_encrypted_key = encrypt_with_key(password_key, raw_key)
+    password_encrypted_key = encrypt_with_key(key=password_key, data=raw_key)
     kms_encrypted_key = encrypt_with_kms(raw_key)
 
-    encrypted_data = encrypt_with_key(raw_key, data)
+    encrypted_data = encrypt_with_key(key=raw_key, data=data)
 
     sql.execute(
         """
