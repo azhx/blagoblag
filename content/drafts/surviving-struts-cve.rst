@@ -5,7 +5,7 @@ If you're a software engineer or work in tech, there's a decent chance that
 your first thought after hearing about the Equifax breach was "oh my god, how
 incompetent do you have to be to get owned like that?" Don't worry, I had the
 same reaction. After a few days of introspection and reviewing the evidence,
-I've come to the conclusion that Equifax made one uncommonly disasterous
+I've come to the conclusion that Equifax made one uncommonly disastrous
 mistake: not upgrading Struts immediately after a remote-code-execution
 vulnerability was disclosed in it; everything else about the situation was
 exceptionally common. My best bet is 497 of the Fortune 500 couldn't survive
@@ -16,7 +16,7 @@ could withstand this mistake?
 Or better yet, what if we wanted to survive *unknown mistakes*? Equifax screwed
 up huge because there was a known RCE and they didn't patch, however for many
 years before that there was an unknown RCE. But they, and many other companies,
-also screw up by not having an architecture which is resllient to such
+also screw up by not having an architecture which is resilient to such
 mistakes. If the person who discovered the Apache Struts vulnerability had been
 motivated differently companies could have been exploited without warning. What
 would we have to do to survive that situation?
