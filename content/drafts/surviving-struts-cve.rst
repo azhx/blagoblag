@@ -23,7 +23,7 @@ would we have to do to survive that situation?
 
 I have no particular insider information on what Equifax's environment looks
 like (or any of the Fortune 500's for that matter), but let's imagine they look
-like what a reasonably savvy startup using AWS does:
+like what a reasonably savvy startup using AWS has:
 
 They've got a VPC in us-east-1, and some EC2 instances in it, maybe even in a
 few different availability zones. Each AZ's EC2 instances are in a security
