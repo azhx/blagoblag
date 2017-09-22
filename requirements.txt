@@ -9,20 +9,15 @@ automat==0.6.0            # via twisted
 cffi==1.11.0              # via misaka
 constantly==15.1.0        # via twisted
 docopt==0.6.2             # via liquidluck
-docutils==0.14          # via liquidluck, rst2pdf
+docutils==0.14            # via liquidluck
 hyperlink==17.3.1         # via twisted
 incremental==17.5.0       # via twisted
 jinja2==2.9.6             # via liquidluck
 liquidluck==3.8.1
 markupsafe==1.0           # via jinja2
 misaka==2.1.0             # via liquidluck
-olefile==0.44             # via pillow
-pdfrw==0.4                # via rst2pdf
-pillow==4.2.1             # via reportlab
-pygments==2.2.0           # via liquidluck, rst2pdf
+pygments==2.2.0           # via liquidluck
 pyyaml==3.12              # via liquidluck
-reportlab==3.4.0          # via rst2pdf
-rst2pdf==0.93
 six==1.11.0               # via automat
 twisted==17.5.0
 zope.interface==4.4.3     # via twisted

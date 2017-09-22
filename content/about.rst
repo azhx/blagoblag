@@ -28,4 +28,4 @@ my old PGP key fingerprint is::
 
 My `resume is available`_, but I'm not looking for work.
 
-.. _`resume is available`: /resume.pdf
+.. _`resume is available`: https://github.com/alex/blagoblag/blob/master/resume.rst
