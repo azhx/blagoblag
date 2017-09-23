@@ -6,4 +6,4 @@ twist web \
     --path=deploy/ \
     --port="tcp:$PORT" \
     --mime-type="application/octet-stream" \
-    --add-header 'Expect-CT: enforce, max-age=60, report-uri="https://7f720d12e3f36cbf877cc177a428f4ce.report-uri.io/r/default/ct/reportOnly"'
+    --add-header 'Expect-CT: enforce, max-age=31536000, report-uri="https://7f720d12e3f36cbf877cc177a428f4ce.report-uri.io/r/default/ct/reportOnly"'
