@@ -19,5 +19,5 @@ misaka==2.1.0             # via liquidluck
 pygments==2.2.0           # via liquidluck
 pyyaml==3.12              # via liquidluck
 six==1.11.0               # via automat
-twisted==17.5.0
+twisted==17.9.0
 zope.interface==4.4.3     # via twisted
