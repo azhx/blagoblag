@@ -17,7 +17,7 @@ UK's National Health System, and the breach of Equifax effecting every American
 with credit. Given these threats, Mr. Rosentein then presents the challenge to
 countering them: encryption.
 
-I would like to be as unambigious: the notion that encryption is the challenge
+I would like to be as unambiguous: the notion that encryption is the challenge
 needing solving in each of these reflects either a gross ignorance of the
 technical reality of these incidents and encryption, or a grotesque
 intellectual dishonesty -- the desire to make a point at the expense of facts.
@@ -67,9 +67,9 @@ General, I expect better.
 
 This is the third time the "going dark" debate has been opened in my lifetime,
 and each time before the conclusion has ultimately been that this probably
-isn't a good idea, and that the U.S. government shouldn't persue it as policy.
+isn't a good idea, and that the U.S. government shouldn't pursue it as policy.
 I have no doubt that a frank and honest discussion in 2017 will produce the
-same outcome. But frank and open discussions start with an adherance to facts.
+same outcome. But frank and open discussions start with an adherence to facts.
 
 .. _`U.S. Naval Academy`: https://lawfareblog.com/deputy-attorney-general-rod-rosenstein-remarks-encryption
 .. _`Global Cyber Security Summit`: https://www.justice.gov/opa/speech/deputy-attorney-general-rod-j-rosenstein-delivers-remarks-global-cyber-security-summit
