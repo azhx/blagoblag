@@ -14,12 +14,12 @@ His description of the threats that face us will be familiar to anyone who's
 glanced at the news in the past year: A data breach at Yahoo which compromised
 all three billion of its users, the WannaCry ransomware which paralyzed the
 UK's National Health System, and the breach of Equifax effecting every American
-with credit. Given these threats, Mr. Rosentein then presents the challenge to
+with credit. Given these threats Mr. Rosentein then presents the challenge to
 countering them: encryption.
 
 I would like to be as unambiguous as possible: the notion that encryption is
 the challenge needing solving in each of these reflects either a gross
-ignorance of the technical reality of these incidents and encryption, or a
+ignorance of the technical reality of these incidents and encryption or a
 grotesque intellectual dishonesty -- the desire to make a point at the expense
 of facts. Encryption did not cause any of these incidents, in fact the absence
 of encryption very likely exacerbated the impact of all three of them. And
@@ -27,21 +27,19 @@ there is no publicly available evidence to support the assertion that law
 enforcement has been unable to investigate any of them due to encryption.
 
 Mr. Rosenstein plainly wants to reopen the "going dark" debate that began under
-the previously administration, spearheaded by FBI Director Jim Comey (arguably
-it began in the '90s with the classification of cryptography as a munition and
-the Clipper Chip, but we'll leave that for another day). While I disagree with
-him, that's a perfectly acceptable policy position - and I have every reason to
-believe him that there are investigations in which encryption does hamper the
-Justice Department and FBI's ability to investigate. However, he is not
-entitled to mislead the public in order to make that point. And make no
-mistake, attempting to use the spectre of computer security challenges that are
-familiar in order to make the argument that his policy is necessary, even
-though his policy has nothing to do with these computer security challenges, is
-the height of intellectual dishonesty.
+the previously administration, spearheaded by FBI Director Jim Comey [#]_.
+While I disagree with him, it's a perfectly acceptable policy position - and I
+have every reason to believe him that there are investigations in which
+encryption does hamper the Justice Department and FBI's ability to investigate.
+However, he is not entitled to mislead the public in order to make that point.
+And make no mistake, attempting to use the spectre of computer security
+challenges that are familiar in order to make the argument that his policy is
+necessary, even though his policy has nothing to do with these computer
+security challenges, is the height of intellectual dishonesty.
 
 During the Obama Administration, I had the opportunity to participate in the
 debate around shaping the administration's position on this question. If there
-is one thing that is resoundingly clear to me, it's that this is a deeply
+is one thing that is resoundingly clear to me it's that this is a deeply
 complex area where attention to detail and understanding of the technical
 problems is paramount. It is impossible to have an insightful conversation
 about this topic without an understanding of issues like the distinction
@@ -71,7 +69,7 @@ General, I expect better.
 
 This is the third time the "going dark" debate has been opened in my lifetime,
 and each time before the conclusion has ultimately been that this probably
-isn't a good idea, and that the U.S. government shouldn't pursue it as policy.
+isn't a good idea and that the U.S. government shouldn't pursue it as policy.
 I have no doubt that a frank and honest discussion in 2017 will produce the
 same outcome. But frank and open discussions start with an adherence to facts.
 
