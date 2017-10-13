@@ -48,7 +48,7 @@ distinctions between signing keys and decryption keys.
 
 Denis McDonough said that this debate over encryption was the single most
 challenging question he faced during his time as White House Chief of Staff to
-President Obama. It has implicitations in law enforcement, national security,
+President Obama. It has implications in law enforcement, national security,
 foreign policy, commerce and international trade, and the security of the
 government itself - nearly every element of the President's responsibilities is
 implicated in this debate. And I witnessed Mr. McDonough and other senior
