@@ -46,14 +46,14 @@ about this topic without an understanding of issues like the distinction
 between encryption at rest and encryption in transit, forward secrecy, or
 distinctions between signing keys and decryption keys.
 
-Denis McDonough, White House Chief of Staff to President Obama, said that this
-debate over encryption was the single most challenging question he faced during
-his time as White House Chief of Staff. It has implicitations in law
-enforcement, national security, foreign policy, commerce and international
-trade, and the security of the government itself - nearly every element of the
-President's responsibilities is implicated in this debate. And I witnessed Mr.
-McDonough and other senior leaders call on every expert available to speak to
-these concerns, particularly technical experts.
+Denis McDonough said that this debate over encryption was the single most
+challenging question he faced during his time as White House Chief of Staff to
+President Obama. It has implicitations in law enforcement, national security,
+foreign policy, commerce and international trade, and the security of the
+government itself - nearly every element of the President's responsibilities is
+implicated in this debate. And I witnessed Mr. McDonough and other senior
+leaders call on every expert available to speak to these concerns, particularly
+technical experts.
 
 Encryption and computer security are technical subjects; there's no way around
 this reality. And therefore they need a seat at the table and to be active
