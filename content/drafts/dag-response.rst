@@ -28,7 +28,7 @@ enforcement has been unable to investigate any of them due to encryption.
 
 Mr. Rosenstein plainly wants to reopen the "going dark" debate that began under
 the previously administration, spearheaded by FBI Director Jim Comey (arguably
-it began in teh '90s with the classification of cryptography as a munition and
+it began in the '90s with the classification of cryptography as a munition and
 the Clipper Chip, but we'll leave that for another day). While I disagree with
 him, that's a perfectly acceptable policy position - and I have every reason to
 believe him that there are investigations in which encryption does hamper the
