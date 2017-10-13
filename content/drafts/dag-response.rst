@@ -28,14 +28,14 @@ enforcement has been unable to investigate any of them due to encryption.
 
 Mr. Rosenstein plainly wants to reopen the "going dark" debate that began under
 the previously administration, spearheaded by FBI Director Jim Comey [#]_.
-While I disagree with him, it's a perfectly acceptable policy position - and I
-have every reason to believe him that there are investigations in which
-encryption does hamper the Justice Department and FBI's ability to investigate.
-However, he is not entitled to mislead the public in order to make that point.
-And make no mistake, attempting to use the spectre of computer security
-challenges that are familiar in order to make the argument that his policy is
-necessary, even though his policy has nothing to do with these computer
-security challenges, is the height of intellectual dishonesty.
+While I disagree vehemently with him, it's a valid policy position - and I have
+every reason to believe him that there are investigations in which encryption
+does hamper the Justice Department and FBI's ability to investigate. However,
+he is not entitled to mislead the public in order to make that point. And make
+no mistake. Attempting to use the spectre of familiar computer security
+challenges in order to make the argument that his policy is necessary, even
+though his policy has nothing to do with these challenges, is the height of
+intellectual dishonesty.
 
 During the Obama Administration, I had the opportunity to participate in the
 debate around shaping the administration's position on this question. If there
