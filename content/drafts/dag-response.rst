@@ -55,7 +55,7 @@ President's responsibilities is implicated in this debate. And I witnessed Mr.
 McDonough and other senior leaders call on every expert available to speak to
 these concerns, particularly technical experts.
 
-Encryption and computer security are technical subjects, there's no way around
+Encryption and computer security are technical subjects; there's no way around
 this reality. And therefore they need a seat at the table and to be active
 participants in this debate. Mr. Rosenstein's speech makes clear that he has no
 interest in listening to technical experts - no expert with a shred of
@@ -72,6 +72,8 @@ and each time before the conclusion has ultimately been that this probably
 isn't a good idea and that the U.S. government shouldn't pursue it as policy.
 I have no doubt that a frank and honest discussion in 2017 will produce the
 same outcome. But frank and open discussions start with an adherence to facts.
+
+.. [#] Arguably it began in the 90's with the classification of cryptography as a munition and the Clipper Chip; but that's a debate for another day.
 
 .. _`U.S. Naval Academy`: https://lawfareblog.com/deputy-attorney-general-rod-rosenstein-remarks-encryption
 .. _`Global Cyber Security Summit`: https://www.justice.gov/opa/speech/deputy-attorney-general-rod-j-rosenstein-delivers-remarks-global-cyber-security-summit
