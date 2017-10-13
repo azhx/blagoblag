@@ -35,7 +35,7 @@ believe him that there are investigations in which encryption does hamper the
 Justice Department and FBI's ability to investigate. However, he is not
 entitled to mislead the public in order to make that point. And make no
 mistake, attempting to use the spectre of computer security challenges that are
-familiar in order to make the argument that this his policy is necessary, even
+familiar in order to make the argument that his policy is necessary, even
 though his policy has nothing to do with these computer security challenges, is
 the height of intellectual dishonesty.
 
