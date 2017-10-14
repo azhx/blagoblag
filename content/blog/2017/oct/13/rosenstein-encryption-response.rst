@@ -13,7 +13,7 @@ that confronts us" and "the challenges we face in countering the threat".
 His description of the threats that face us will be familiar to anyone who's
 glanced at the news in the past year: A data breach at Yahoo which compromised
 all three billion of its users, the WannaCry ransomware which paralyzed the
-UK's National Health System, and the breach of Equifax effecting every American
+UK's National Health System, and the breach of Equifax affecting every American
 with credit. Given these threats Mr. Rosentein then presents the challenge to
 countering them: encryption.
 
