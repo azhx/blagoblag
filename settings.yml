@@ -39,4 +39,9 @@ theme:
               link: /about/
             - name: Contact
               link: /contact/
-        no_comments: "Sorry, no comments here. I'd much rather you wrote your own blog post or sent me an email instead."
+        post_about_image: "/images/about.jpg"
+        post_about_text: >
+            Hi, I'm Alex. I'm a software engineer at Mozilla, working on
+            Firefox security. Before that I was a software engineer with the
+            U.S. Digital Service. I'm an avid open source contributor and live
+            in Washington, DC.
