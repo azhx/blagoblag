@@ -36,4 +36,4 @@ In general, the `Computer Anonymous`_ rules are a good starting point.
 
 
 .. _`Ally Bingo card`: https://twitter.com/concernedfems/status/520023816769388547
-.. _`Computer Anonymous`: http://computeranonymous.org/
+.. _`Computer Anonymous`: https://github.com/computeranonymous/computer/blob/gh-pages/index.html#L51-L58
