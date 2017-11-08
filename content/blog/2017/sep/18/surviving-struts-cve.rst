@@ -31,7 +31,7 @@ and the only things with ingress to the SG is an ELB, in HTTP/HTTPS mode and a
 bastion server. EC2 instances have private IPs only, but can access the
 internet through a NAT gateway. The application uses an RDS PostgreSQL
 database, it has full disk encryption enabled, requires TLS for connections,
-and is accessibly exclusively via our security groups.
+and is accessible exclusively via our security groups.
 
 This is a pretty well put together infrastructure for a startup. And if the EC2
 instances were running a vulnerable copy of Struts, it would be game over for
