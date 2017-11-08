@@ -12,7 +12,7 @@ docopt==0.6.2             # via liquidluck
 docutils==0.14            # via liquidluck
 hyperlink==17.3.1         # via twisted
 incremental==17.5.0       # via twisted
-jinja2==2.9.6             # via liquidluck
+jinja2==2.10             # via liquidluck
 liquidluck==3.8.1
 markupsafe==1.0           # via jinja2
 misaka==2.1.0             # via liquidluck
