@@ -91,7 +91,7 @@ attempt to call it:
     static const char kSandboxPolicy[] = R"(
     (version 1)
     (deny default)
-    (deny process-info* dynamic-code-generation file-map-executable)
+    (deny dynamic-code-generation)
     )";
 
     void enable_sandbox() {
