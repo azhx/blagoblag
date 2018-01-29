@@ -10,7 +10,7 @@ access each other's data or system resources like the camera. In the context of
 a browser, sandboxing refers to the processes that run web pages, generally
 called "content" or "renderer" processes, as opposed to the "parent" or
 "browser" process, which coordinates the content processes and has full
-privledges so it can do things like write files anywhere on disk to save
+privileges so it can do things like write files anywhere on disk to save
 downloaded files or access the camera.
 
 A related computer security technique is exploit mitigation, in the context of
@@ -27,7 +27,7 @@ Guard (ACG). In short, ACG makes ``mmap`` and ``mprotect`` (I'm going to use
 the POSIX names throughout this post, instead of mixing the Windows and POSIX
 names) refuse to allow new pages to be created with ``PROT_EXEC``, or existing
 ``PROT_EXEC`` pages to be marked ``PROT_WRITE``. In unsandboxed processes, it's
-common to acheive remote code execution by hijacking control flow to call
+common to achieve remote code execution by hijacking control flow to call
 ``system`` or a similar function which gives the attacker a fresh process of
 their choosing. However, inside a browser sandbox an attacker can't create new
 processes, instead they need to run their payload inside the process's address
@@ -153,9 +153,9 @@ mitigation that protected against an attacker creating new executable pages.
 At this point I decided that I should report this to Apple as a potential
 security issue. I was a bit on the fence, since I couldn't know for certain
 what the intended behaviour of ``dynamic-code-generation`` was without
-documentation, and maybe it was never expected to work at all on macOS! None
-the less, there were a few macOS sandbox profiles that were using it which was
-evidence that someone expected it to work on macOS. Plus I had a clear
+documentation, and maybe it was never expected to work at all on macOS!
+Nonetheless, there were a few macOS sandbox profiles that were using it which
+was evidence that someone expected it to work on macOS. Plus I had a clear
 reproducer, so if this was expected behaviour it should be easy enough for them
 to recognize it as such.
 
@@ -168,8 +168,8 @@ out.
 If ``(deny dyanmic-code-generation)`` had done what I'd expected, it'd have
 been the missing piece in building an ACG-alike mitigation for macOS. The other
 piece, which did exist, was limiting what sorts of dynamic libraries can be
-loaded. On Windows, this is achieved with with Code Integrity Guard, which
-requires that any DLLs which are loaded be signed. On macOS we acheive this
+loaded. On Windows, this is achieved with Code Integrity Guard, which
+requires that any DLLs which are loaded be signed. On macOS we achieve this
 with the ``file-map-executable`` permission. By default, macOS's sandbox policy
 we allow loading a dynamic library from anywhere you can read files from. With
 ``file-map-executable`` you can add a deny-all rule and then whitelist
