@@ -46,7 +46,7 @@ processes have an ACG like mechanism -- besides Safari, no process is allowed
 to allocate new executable pages at runtime, because of the requirement that
 all code on iOS has to be signed -- however, it wasn't clear if macOS has a
 similar mechanism. As a bit of a digression, macOS has two ways to sandbox your
-process. One is to use macOS's `App Sandbox API`_, this is the official,
+process. One is to use macOS's `App Sandbox API`_, which is the official,
 supported, and documented way to sandbox your application. At present, no
 browser (Chrome, Firefox, or Safari) uses this API. Instead they all use the
 private macOS "Seatbelt" API. The Seatbelt API is really a subset of Scheme
@@ -154,7 +154,7 @@ was evidence that someone expected it to work on macOS. Plus I had a clear
 reproducer, so if this was expected behaviour it should be easy enough for them
 to recognize it as such.
 
-Unfortunately this story has an unhappy ending, Apple declared that my PoC:
+Unfortunately this story has an unhappy ending. Apple declared that my PoC:
 "did not demonstrate any behavior from dynamic-code-generation that was
 unexpected." I'm still not sure what the expected behaviour is! Perhaps someone
 who is better at reverse-engineering than I am will read this and figured it
