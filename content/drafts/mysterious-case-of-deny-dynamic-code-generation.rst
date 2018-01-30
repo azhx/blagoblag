@@ -25,12 +25,12 @@ names) refuse to allow new pages to be created with ``PROT_EXEC``, or existing
 common to achieve remote code execution by hijacking control flow to call
 ``system`` or a similar function which gives the attacker a fresh process of
 their choosing. However, inside a browser sandbox an attacker can't create new
-processes, instead they need to run their payload inside the process's address
+processes; instead they need to run their payload inside the process's address
 space. One technique for doing this is to hijack control flow to create a new
 page of executable memory, place shellcode inside that memory, and then hijack
 control flow to jump to the shellcode. ACG mitigates this technique, by
 preventing the attacker from creating a page of executable memory with their
-shellcode, instead they are forced to use other techniques such as ROP to
+shellcode; instead they are forced to use other techniques such as ROP to
 encode their payload.
 
 One of my recent projects for Firefox was investigating whether enabling ACG
