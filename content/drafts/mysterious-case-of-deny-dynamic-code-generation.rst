@@ -165,7 +165,7 @@ unexpected." I'm still not sure what the expected behaviour is! Perhaps someone
 who is better at reverse-engineering than I am will read this and figured it
 out.
 
-If ``(deny dyanmic-code-generation)`` had done what I'd expected, it'd have
+If ``(deny dynamic-code-generation)`` had done what I'd expected, it'd have
 been the missing piece in building an ACG-alike mitigation for macOS. The other
 piece, which did exist, was limiting what sorts of dynamic libraries can be
 loaded. On Windows, this is achieved with Code Integrity Guard, which
