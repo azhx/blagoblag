@@ -171,7 +171,7 @@ piece, which did exist, was limiting what sorts of dynamic libraries can be
 loaded. On Windows, this is achieved with Code Integrity Guard, which
 requires that any DLLs which are loaded be signed. On macOS we achieve this
 with the ``file-map-executable`` permission. By default, macOS's sandbox policy
-we allow loading a dynamic library from anywhere you can read files from. With
+allows loading a dynamic library from anywhere you can read files from. With
 ``file-map-executable`` you can add a deny-all rule and then whitelist
 particular places on disk to load libraries from. We've now landed a patch for
 Firefox which limits us to loading libraries only from system directories and
