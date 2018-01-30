@@ -1,19 +1,14 @@
 The mysterious case of (deny dynamic-code-generation)
 =====================================================
 
-My day job is working on sandboxing for Firefox. Sandboxing is a computer
-security technique where a process is given (or voluntarily drops to) fewer
-permissions so that even if it's exploited, the damage that can be done is
-limited. The context many people will be familiar with sandboxing from is
-Android or iOS, where individual apps do not, by default, have permissions to
-access each other's data or system resources like the camera. In the context of
-a browser, sandboxing refers to the processes that run web pages, generally
-called "content" or "renderer" processes, as opposed to the "parent" or
-"browser" process, which coordinates the content processes and has full
-privileges so it can do things like write files anywhere on disk to save
+My day job is working on sandboxing for Firefox. In the context of a browser,
+sandboxing refers to the processes that run web pages, generally called
+"content" or "renderer" processes. These are in contrast to the "parent" or
+"browser" process, which coordinates the content processes and is not
+sandboxed, so it can do things like write files anywhere on disk to save
 downloaded files or access the camera.
 
-A related computer security technique is exploit mitigation, in the context of
+A related computer security technique is exploit mitigation. In the context of
 a browser specifically memory corruption exploit mitigation. Exploit mitigation
 is a family of approaches with the goal of making it harder for an attacker to
 take a memory corruption vulnerability (heap or stack buffer overflow, use
