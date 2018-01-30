@@ -157,7 +157,7 @@ to recognize it as such.
 Unfortunately this story has an unhappy ending. Apple declared that my PoC:
 "did not demonstrate any behavior from dynamic-code-generation that was
 unexpected." I'm still not sure what the expected behaviour is! Perhaps someone
-who is better at reverse-engineering than I am will read this and figured it
+who is better at reverse-engineering than I am will read this and figure it
 out.
 
 If ``(deny dynamic-code-generation)`` had done what I'd expected, it'd have
