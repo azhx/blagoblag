@@ -52,9 +52,9 @@ approaches that worked against mass malware will be effective against targeted
 attackers.
 
 We shouldn't design our approach to security based on the idea that we will
-know when and how it is being exploited; so when we find out about bugs, we
-should fix them promptly -- if anything, Project Zero's 90 day disclosure
-timeline may be too long.
+know when and how it is being exploited. When we find out about bugs, we should
+fix them promptly -- if anything, Project Zero's 90 day disclosure timeline may
+be too long.
 
 .. _`unfixed security issue in Microsoft's Edge browser`: https://bugs.chromium.org/p/project-zero/issues/detail?id=1435
 .. _`RAND's "Zero Days, Thousands of Nights"`: https://www.rand.org/pubs/research_reports/RR1751.html
