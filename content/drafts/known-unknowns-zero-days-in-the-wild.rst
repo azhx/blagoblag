@@ -44,8 +44,8 @@ the idea that many governments have exploits that go from malicious website to
 kernel code execution against every major browser/operating system, and that we
 have no visibility into how they're used.
 
-When we ocassionally do get insights into what exploitation looks like in the
-real world, it generally confirms this perspective: vulnerabilities and
+When we ocassionally do get insights into what targeted exploitation looks like
+in the real world, it generally confirms this perspective: vulnerabilities and
 exploits can be used in the wild for long periods of time without detection. We
 shouldn't assume that the same approaches that worked against mass malware will
 be effective against targeted attackers.
