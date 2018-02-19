@@ -61,11 +61,11 @@ having internal red teams and bug bounties to attack our assumptions are
 critical).
 
 In summary, we do not know how client software like operating systems and web
-browsers are being exploited in targeted attacks. We should not assume that
-the same approaches that worked against mass malware will be effective against
+browsers are being exploited in targeted attacks. We should not assume that the
+same approaches that worked against mass malware will be effective against
 resourced nation states with narrow objectives. We should not design our
-approach to security based on the idea that we'll known when and how it is
-being exploited, so when we find out about bugs, we should fix them promptly --
+approach to security based on the idea that we will know when and how it is
+being exploited; so when we find out about bugs, we should fix them promptly --
 if anything, Project Zero's 90 day disclosure timeline may be too long.
 
 .. _`unfixed security issue in Microsoft's Edge browser`: https://bugs.chromium.org/p/project-zero/issues/detail?id=1435
