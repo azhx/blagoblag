@@ -1,4 +1,4 @@
-Known unknowns - zero days in the wild
+Known unknowns - zero-days in the wild
 ======================================
 
 This past week Google's Project Zero disclosed an `unfixed security issue in
