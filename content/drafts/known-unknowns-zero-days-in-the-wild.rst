@@ -54,11 +54,11 @@ this.
 One of the other ways we learn about these dynamics is bug collisions: when two
 researchers discover the same bug. If we look across the entirety of a browser,
 there are so many vulnerabilities that collisions aren't high probability.
-However Project Zero's research methodology specifically focuses on "high
+However `Project Zero's research methodology`_ specifically focuses on "high
 contention" attack surfaces, things everyone writing an exploit will need, for
 example sandbox escapes or ways to turn a heap-buffer-overflow into arbitrary
 code execution. That's exactly what the bug in question is: a bypass for
-Arbitrary Code Guard, a security feature in Edge. Any attacker looking to
+`Arbitrary Code Guard`_, a security feature in Edge. Any attacker looking to
 exploit Edge will need something like this (or to encode their entire payload
 as ROP), so it's significantly more likely than usual that another attacker is
 aware of this vulnerability, supporting the idea that disclosure is the right
@@ -71,3 +71,5 @@ be too long, we never know who might be exploiting them.
 
 .. _`unfixed security issue in Microsoft's Edge browser`: https://bugs.chromium.org/p/project-zero/issues/detail?id=1435
 .. _`RAND's "Zero Days, Thousands of Nights"`: https://www.rand.org/pubs/research_reports/RR1751.html
+.. _`Project Zero's research methodology`: https://www.youtube.com/watch?v=ZKIIPu1wqHs
+.. _`Arbitrary Code Guard`: https://blogs.windows.com/msedgedev/2017/02/23/mitigating-arbitrary-native-code-execution/#8BkYQKDW2kCMZeli.97
