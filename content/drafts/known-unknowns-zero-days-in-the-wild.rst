@@ -31,26 +31,38 @@ targeted attacks like Trident can go undetected for many years -- the Trident
 malware was discovered attacking iOS 9, but disassembly showed that it was
 designed to work at least as far back as iOS 7.
 
-For sophisticated attackers, like national intelligence agencies, stealth is a
-feature. They put as much effort into making sure their attacks are undetected
-as they do into ensuring they work in the first place. As a result, they're
-probably pretty good at it. In `RAND's "Zero Days, Thousands of Nights"`_
-report they spoke with numerous exploit developers and, "None we spoke to
-believed that their vulnerabilities or exploits died or were discovered due to
-use by a customer in some operational campaign, or by information leakage". As
-an industry we need to evolve our thinking beyond mass malware if we want to
-protect users against sophisticated nation state attackers. We must adapt to
-the idea that many governments have exploits that go from malicious website to
-kernel code execution against every major browser/operating system, and that we
-have no visibility into how they're used.
+For sophisticated attackers, for example national intelligence agencies,
+stealth is a feature. They put as much effort into making sure their attacks
+are undetected as they do into ensuring they work in the first place. As a
+result, they're probably pretty good at it. In `RAND's "Zero Days, Thousands of
+Nights"`_ report they spoke with numerous exploit developers and, "None we
+spoke to believed that their vulnerabilities or exploits died or were
+discovered due to use by a customer in some operational campaign, or by
+information leakage". As an industry we need to evolve our thinking beyond mass
+malware if we want to protect users against sophisticated attackers. We must
+adapt to the idea that many governments have exploits that go from malicious
+website to kernel code execution against every major browser/operating system,
+and that we have no visibility into how they're used.
 
 When we occasionally do get insights into what targeted exploitation looks like
 in the real world, it generally confirms this perspective: when the attacker is
 concerned about stealth, vulnerabilities and exploits can be used in the wild
 for long periods of time without detection. Both the Trident exploit as well as
 the exploits found in the Hacking Team and ShadowBrokers dumps demonstrate
-this. We shouldn't assume that the same approaches that worked against mass
-malware will be effective against targeted attackers.
+this.
+
+One of the other ways we learn about these dynamics is bug collisions: when two
+researchers discover the same bug. If we look across the entirety of a browser,
+there are so many vulnerabilities that collisions aren't high probability.
+However Project Zero's research methodology specifically focuses on "high
+contention" attack surfaces, things everyone writing an exploit will need, for
+example sandbox escapes or ways to turn a heap-buffer-overflow into arbitrary
+code execution. That's exactly what the bug in question is: a bypass for
+Arbitrary Code Guard, a security feature in Edge. Any attacker looking to
+exploit Edge will need something like this (or to encode their entire payload
+as ROP), so it's significantly more likely than usual that another attacker is
+aware of this vulnerability, supporting the idea that disclosure is the right
+move.
 
 We shouldn't design our approach to security based on the idea that we will
 know when and how it is being exploited. When we find out about bugs, we should
