@@ -27,9 +27,9 @@ assumes that we have good visibility into what vulnerabilities are being
 exploited.
 
 We don't. While mass malware like WannaCry necessarily makes itself visible,
-targeted ones like the Trident malware can go undetected for many years -- the
-Trident malware was discovered attacking iOS 9, but disassembly showed that it
-was designed to work at least as far back as iOS 7.
+targeted attacks like Trident can go undetected for many years -- the Trident
+malware was discovered attacking iOS 9, but disassembly showed that it was
+designed to work at least as far back as iOS 7.
 
 For sophisticated attackers, like national intelligence agencies, stealth is a
 feature. They put as much effort into making sure their attacks are undetected
