@@ -48,9 +48,9 @@ When we occasionally do get insights into what targeted exploitation looks like
 in the real world, it generally confirms this perspective: when the attacker is
 concerned about stealth, vulnerabilities and exploits can be used in the wild
 for long periods of time without detection. Both the Trident exploit as well as
-the exploits found in the Hacking Team dump demonstrate this. We shouldn't
-assume that the same approaches that worked against mass malware will be
-effective against targeted attackers.
+the exploits found in the Hacking Team and ShadowBrokers dumps demonstrate
+this. We shouldn't assume that the same approaches that worked against mass
+malware will be effective against targeted attackers.
 
 We shouldn't design our approach to security based on the idea that we will
 know when and how it is being exploited. When we find out about bugs, we should
