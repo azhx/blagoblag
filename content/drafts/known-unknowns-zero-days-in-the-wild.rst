@@ -44,7 +44,7 @@ the idea that many governments have exploits that go from malicious website to
 kernel code execution against every major browser/operating system, and that we
 have no visibility into how they're used.
 
-When we ocassionally do get insights into what targeted exploitation looks like
+When we occasionally do get insights into what targeted exploitation looks like
 in the real world, it generally confirms this perspective: when the attack is
 concerned about stealth, vulnerabilities and exploits can be used in the wild
 for long periods of time without detection. Both the Trident exploit as well as
