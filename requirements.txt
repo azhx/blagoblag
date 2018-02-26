@@ -10,7 +10,7 @@ cffi==1.11.4              # via misaka
 constantly==15.1.0        # via twisted
 docopt==0.6.2             # via liquidluck
 docutils==0.14            # via liquidluck
-hyperlink==17.3.1         # via twisted
+hyperlink==18.0.0         # via twisted
 incremental==17.5.0       # via twisted
 jinja2==2.10             # via liquidluck
 liquidluck==3.8.1
