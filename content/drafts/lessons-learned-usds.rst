@@ -19,8 +19,8 @@ infrastructure, they decided they wanted to run a VA office that processes
 disability claims or study and implement national healthcare policy.
 
 I say that we live in a world of our creation because I've seen that if you
-want to have an impact on how things function at the national level, all you
-have to do is *decide* that that's what you want to do with your time. Which is
+want to have an impact on how things function at the national level, you have
+to start by *deciding* that that's what you want to do with your time. Which is
 not to say it's easy, or that you always accomplish what you set out to, but my
 time at USDS taught me that you have to decide to try, and to believe that it's
 possible for a small group of thoughtful and committed citizens to change the
