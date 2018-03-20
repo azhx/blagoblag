@@ -4,7 +4,7 @@ Lessons learned at USDS
 From 2015 to 2017 I worked for the United States Digital Service, a team within
 the US Government, created after the launch failure of healthcare.gov,
 dedicated to improving the government's ability to use technology. I learned
-about a lot of different things there: bureaucracy and PL/SQL, organizational
+about a lot of different things there: bureaucracy and PowerBuilder, organizational
 transformation and Classic ASP, to name a few. However this post will instead
 be about two meta-lessons I learned from my time at USDS.
 
@@ -43,9 +43,9 @@ was worth it, I'd do it again in a heartbeat.
 Studiously avoiding stressors is a great strategy for avoiding failure cases
 like burnout, but it also precludes certain successes. Maybe somewhere it's
 possible to do as much good as we were able to, without needing to tempt
-burnout, but I don't think we could have accomplished what we did without
-pushing ourselves and accepting the extra stress in the environments USDS
-operated in. And we were fortunate to have successes to show for it, hardly a
+burnout, but in the environment USDS operated in I don't think it was possible
+to accomplish what we did without pushing ourselves and accepting the extra
+stress. And we were fortunate to have successes to show for it, hardly a
 guarantee; I imagine I'd have a much dimmer view of my time if we hadn't been
 able to help veterans, refugees, and many others. My experience at USDS helped
 me understand that there are things you can accomplish for others that are
