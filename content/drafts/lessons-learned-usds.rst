@@ -19,12 +19,12 @@ infrastructure, they decided they wanted to run a VA office that processes
 disability claims or study and implement national healthcare policy.
 
 I say that we live in a world of our creation because I've seen that if you
-want to have an impact on how things function at the national level, you have
-to start by *deciding* that that's what you want to do with your time. Which is
-not to say it's easy, or that you always accomplish what you set out to, but my
-time at USDS taught me that you have to decide to try, and to believe that it's
-possible for a small group of thoughtful and committed citizens to change the
-world, because it is.
+want to have an impact on how things function at the national level (or any
+other level for that matter), you have to start by *deciding* that that's what
+you want to do with your time. Which is not to say it's easy, or that you
+always accomplish what you set out to, but my time at USDS taught me that you
+have to decide to try, because it is absolutely possible for a small group of
+thoughtful and committed citizens to change the world.
 
 The second lesson is that there are things in life worth burning out for. For
 as long as I can remember, I've taken it as an article of faith that burnout
