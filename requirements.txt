@@ -20,4 +20,4 @@ pygments==2.2.0           # via liquidluck
 pyyaml==3.12              # via liquidluck
 six==1.11.0               # via automat
 twisted==17.9.0
-zope.interface==4.4.3     # via twisted
+zope.interface==4.5.0     # via twisted
