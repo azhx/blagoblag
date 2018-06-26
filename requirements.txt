@@ -17,7 +17,7 @@ liquidluck==3.8.1
 markupsafe==1.0           # via jinja2
 misaka==2.1.0             # via liquidluck
 pygments==2.2.0           # via liquidluck
-pyyaml==3.12              # via liquidluck
+pyyaml==4.1              # via liquidluck
 six==1.11.0               # via automat
 twisted==18.4.0
 zope.interface==4.5.0     # via twisted
