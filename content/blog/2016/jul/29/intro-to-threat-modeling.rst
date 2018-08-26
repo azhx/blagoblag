@@ -59,8 +59,8 @@ reduces the risk of phishing). Similarly, password reuse attacks don't exist
 because they're mitigated by 2fa on all service providers and lack of password
 reuse.
 
-A direct compromise of the service providers infrastructure could be
-used to compromise the integirty of the contents.
+A direct compromise of the service provider's infrastructure could be
+used to compromise the integrity of the contents.
 
 Finally, an attacker able to MITM connections between a visitor and the CDN or
 the CDN and the origin could compromise the integrity of the contents.
