@@ -111,4 +111,4 @@ to use securely. It should be a component of more teams' straetgies for building
 secure software.
 
 .. _`pyca/cryptography`: https://cryptography.io
-.. _`libFuzer`: https://llvm.org/docs/LibFuzzer.html
+.. _`libFuzzer`: https://llvm.org/docs/LibFuzzer.html
