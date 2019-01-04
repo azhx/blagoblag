@@ -86,9 +86,18 @@ obesity`_. Yes, you read that correctly. These are just two of what are many
 many stories of horrific abuses of software.
 
 We should feel the same urgency around this exploitation as we do around an
-attacker who has breached our network and is exfiltrating data. We need to make
-exploitation so much more expensive that it is impractical as a tool of petty
-despots.
+attacker who has breached our network and is exfiltrating data. When a company
+is suffering an ongoing breach they delay feature work, and re-prioritize
+engineers and other resources to security. We need to feel that same urgency
+around the ongoing crisis that is exploitation of these vulnerabilities to
+attack users.
+
+Success criteria:
+
+* At least one major platform acknowledges this crisis, and announces a plan to
+  address it systemically, with deliverables starting in 2019.
+* Substantial increase in the difficult of exploitation from that platform,
+  based on analysis independent security researchers.
 
 User agency first
 -----------------
