@@ -4,11 +4,11 @@ Security wants for 2019
 About 3 years ago I wrote about `five projects I thought were very important for
 advancing the state of computer security`_. Looking back at that old post, I was
 reasonably pleased to find that all are having real positive impacts and none
-turned out to be busts. So I wanted to take at writing down the things I want to
-see happen in 2019, in the hopes that the universe will provide a few of them.
-I've attempted to make each of these be something that could realistically be
-accomplished in a year, and I've tried to include some success criteria for each
-one. They are in no particular order.
+turned out to be busts. So I wanted to take a stab at writing down the things I
+want to see happen in 2019, in the hopes that the universe will provide a few of
+them. I've attempted to make each of these be something that could realistically
+be accomplished in a year, and I've tried to include some success criteria for
+each one. They are in no particular order.
 
 Rust breakthrough
 -----------------
@@ -22,6 +22,7 @@ hypervisors, and other similar software that's responsible for implementing a
 strong security boundary.
 
 Success criteria:
+
 * Adoption of Rust as an official development language by another major OS and
   browser.
 * Public talks/writing from teams that adopted Rust in these domains describing
@@ -35,6 +36,7 @@ address the scourge of phishing. I want more consumer awareness of security
 keys, more large deployments at companies, and more products to support them.
 
 Success criteria:
+
 * Google Accounts, Facebook, and Twitter switching from the legacy u2f.js API to
   webauthn.
 * Every major browser ships webauthn in a stable release. NFC security key
@@ -59,6 +61,7 @@ planning on retiring TLS 1.0 and 1.1 in 2019, I hope that continues according to
 plan.
 
 Success criteria:
+
 * TLS 1.3 jumps from 5.7% of TLS connections in Firefox to 15%.
 * TLS 1.0+1.1 drop from 1.2% of TLS connections in Firefox to less than 0.1%.
 
