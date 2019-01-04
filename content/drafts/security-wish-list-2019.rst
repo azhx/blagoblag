@@ -104,10 +104,10 @@ User agency first
 
 Software is getting more complex at a rapid clip. If you're not responsible for
 building it (and take a healthy interest in things you don't work on), it's fair
-to say that it's literally impossible to know how anything on your computer
-works. Worse though, it's rapidly becoming impossible to know *what* it is
-doing, much less *how*. I've lost track of the number of times I've had to
-answer "how did Facebook know to show me an ad for that?"
+to say that it's literally impossible to know how any software actually works.
+Worse though, it's rapidly becoming impossible to know *what* it is doing, much
+less *how*. I've lost track of the number of times I've had to answer "how did
+Facebook know to show me an ad for that?"
 
 The ultimate purpose of security is to build systems that are worthy of our
 trust. How can users' trust mean anything if they can't `understand what
