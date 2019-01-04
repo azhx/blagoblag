@@ -80,8 +80,8 @@ Urgency around exploitation
 ---------------------------
 
 Right now vulnerabilities (almost certainly memory corruption!) in cell phones
-are being used to surveil `human rights activists in the Middle East`_ and a
-`nutritional epidemiologist investigating the impact of soda consumption on
+are being exploited to surveil `human rights activists in the Middle East`_ and
+a `nutritional epidemiologist investigating the impact of soda consumption on
 obesity`_. Yes, you read that correctly. These are just two of what are many
 many stories of horrific abuses of software.
 
