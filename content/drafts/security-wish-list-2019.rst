@@ -60,6 +60,9 @@ performance improvements. Further, in 2018 all the major browsers announced they
 were planning on retiring TLS 1.0 and 1.1 in 2019, I hope that continues
 according to plan.
 
+In addition to the security improvements, this will serve as proof of our
+ability to iterate, improve, and deprecate web standards.
+
 Success criteria:
 
 * TLS 1.3 jumps from 5.7% of TLS connections in Firefox to 15%.
