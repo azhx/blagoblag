@@ -1,14 +1,14 @@
-Security wants for 2019
-=======================
+Security wish list for 2019
+===========================
 
 About 3 years ago I wrote about `five projects I thought were very important for
 advancing the state of computer security`_. Looking back at that old post, I was
 reasonably pleased to find that all are having real positive impacts and none
-turned out to be busts. So I wanted to take a stab at writing down the things I
-want to see happen in 2019, in the hopes that the universe will provide a few of
-them. I've attempted to make each of these be something that could realistically
-be accomplished in a year, and I've tried to include some success criteria for
-each one. They are in no particular order.
+turned out to be busts. So I decided to take a stab at writing down the things I
+*want* to see happen in 2019, in the hopes that the universe will provide a few
+of them. I've attempted to make each of these be something that could
+realistically be accomplished in a year, and I've tried to include some success
+criteria for each one. They are in no particular order.
 
 Rust breakthrough
 -----------------
