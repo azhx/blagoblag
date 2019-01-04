@@ -47,18 +47,18 @@ Success criteria:
   be valuable.
 * My bank to offer U2F support.
 * Just once when talking to someone about security, I'd like them to have heard
-  of keys before I spoke to them.
+  of security keys before I spoke to them.
 
 TLS 1.3 to the moon
 -------------------
 
-The IETF shipped the final TLS 1.3 spec in 2018. In 2019 I want adoption to take
-off. TLS 1.3 makes a number of security improvements over previous versions:
-better key handling for session resumption and removal of poor ciphersuites
-(such as CBC mode ciphers and RSA key exchange). It also makes performance
-improvements. Further, in 2018 all the major browsers announced they were
-planning on retiring TLS 1.0 and 1.1 in 2019, I hope that continues according to
-plan.
+The IETF shipped the final `TLS 1.3 spec`_ in 2018. In 2019 I want adoption to
+take off. TLS 1.3 makes a number of security improvements over previous
+versions: better key handling for session resumption and removal of poor
+ciphersuites (such as CBC mode ciphers and RSA key exchange). It also makes
+performance improvements. Further, in 2018 all the major browsers announced they
+were planning on retiring TLS 1.0 and 1.1 in 2019, I hope that continues
+according to plan.
 
 Success criteria:
 
@@ -106,6 +106,7 @@ is doing on their behalf?`_.
 
 .. _`five projects I thought were very important for advancing the state of computer security`: https://alexgaynor.net/2015/nov/28/5-critical-security-projects/
 .. _`I've written about before`: https://alexgaynor.net/2017/nov/20/a-vulnerability-by-any-other-name/
+.. _`TLS 1.3 spec`: https://tools.ietf.org/html/rfc8446
 .. _`human rights activists in the Middle East`: https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/
 .. _`nutritional epidemiologist investigating the impact of soda consumption on obesity`: https://citizenlab.ca/2017/02/bittersweet-nso-mexico-spyware/
 .. _`understand what software is doing on their behalf?`: https://glyph.twistedmatrix.com/2005/11/ethics-for-programmers-primum-non.html
