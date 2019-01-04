@@ -14,12 +14,12 @@ Rust breakthrough
 -----------------
 
 I'm very bullish on Rust as a major component of our collective strategy for
-dealing with the scourge of memory corruption, as `I've written about before`_.
-I've been very encouraged by Rust's growth to date. My hope is that 2019 is a
-break out year for Rust, with significant adoption in a domain I'm passionate
-about, systems software traditionally written in C/C++: browsers, OS kernels,
-hypervisors, and other similar software that's responsible for implementing a
-strong security boundary.
+dealing with the `scourge of memory corruption`_, as `I've written about
+before`_. I've been very encouraged by Rust's growth to date. My hope is that
+2019 is a break out year for Rust, with significant adoption in a domain I'm
+passionate about, systems software traditionally written in C/C++: browsers, OS
+kernels, hypervisors, and other similar software that's responsible for
+implementing a strong security boundary.
 
 Success criteria:
 
@@ -114,6 +114,7 @@ trust. How can users' trust mean anything if they can't `understand what
 software is doing on their behalf?`_.
 
 .. _`five projects I thought were very important for advancing the state of computer security`: https://alexgaynor.net/2015/nov/28/5-critical-security-projects/
+.. _`scourge of memory corruption`: https://twitter.com/LazyFishBarrel
 .. _`I've written about before`: https://alexgaynor.net/2017/nov/20/a-vulnerability-by-any-other-name/
 .. _`TLS 1.3 spec`: https://tools.ietf.org/html/rfc8446
 .. _`human rights activists in the Middle East`: https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/
