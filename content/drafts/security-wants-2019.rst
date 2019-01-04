@@ -110,8 +110,8 @@ doing, much less *how*. I've lost track of the number of times I've had to
 answer "how did Facebook know to show me an ad for that?"
 
 The ultimate purpose of security is to build systems that are worthy of our
-trust. How can users trust mean anything if they can't `understand what software
-is doing on their behalf?`_.
+trust. How can users' trust mean anything if they can't `understand what
+software is doing on their behalf?`_.
 
 .. _`five projects I thought were very important for advancing the state of computer security`: https://alexgaynor.net/2015/nov/28/5-critical-security-projects/
 .. _`I've written about before`: https://alexgaynor.net/2017/nov/20/a-vulnerability-by-any-other-name/
