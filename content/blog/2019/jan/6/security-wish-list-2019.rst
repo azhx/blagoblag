@@ -121,7 +121,7 @@ Facebook know to show me an ad for that?"
 
 The ultimate purpose of security is to build systems that are worthy of our
 trust. How can users' trust mean anything if they can't `understand what
-software is doing on their behalf?`_. In 2019, I'd like to see a new focus on
+software is doing on their behalf`_? In 2019, I'd like to see a new focus on
 making our products better understood, both by communicating better, and by
 simplifying their behavior.
 
@@ -138,4 +138,4 @@ Success criteria:
 .. _`TLS 1.3 spec`: https://tools.ietf.org/html/rfc8446
 .. _`human rights activists in the Middle East`: https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/
 .. _`nutritional epidemiologist investigating the impact of soda consumption on obesity`: https://citizenlab.ca/2017/02/bittersweet-nso-mexico-spyware/
-.. _`understand what software is doing on their behalf?`: https://glyph.twistedmatrix.com/2005/11/ethics-for-programmers-primum-non.html
+.. _`understand what software is doing on their behalf`: https://glyph.twistedmatrix.com/2005/11/ethics-for-programmers-primum-non.html
