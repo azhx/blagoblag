@@ -97,8 +97,8 @@ attack users.
 
 Success criteria:
 
-* At least one major platform acknowledges this crisis, and announces a plan to
-  address it systemically, with deliverables starting in 2019.
+* At least one major platform explicitly acknowledges this crisis, and announces
+  a plan to address it systemically, with deliverables starting in 2019.
 * Substantial increase in the difficult of exploitation from that platform,
   based on analysis independent security researchers.
 
