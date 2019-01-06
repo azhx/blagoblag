@@ -45,7 +45,7 @@ Success criteria:
   BLE+NFC). This would mostly be accomplished by removing the need for BLE keys,
   via iOS support for NFC keys, but cost reduction in other variants would also
   be valuable.
-* My bank to offer U2F support.
+* My bank to offer security key support.
 * Just once when talking to someone about security, I'd like them to have heard
   of security keys before I spoke to them.
 
