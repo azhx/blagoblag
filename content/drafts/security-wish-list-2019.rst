@@ -79,6 +79,13 @@ came to be that some of our most secure tools have this potentially dangerous
 provenance. Is it possible to fund secure software development without a
 mostly-unrelated spigot of money?
 
+Success criteria:
+
+* Op-Eds, papers, and blog posts discussing to what extent the current situation
+  is a problem, how can we better fund secure software development, and whether
+  this is just a small piece of a broader conversation on monopolist behavior in
+  technology or if security is a distinct challenge.
+
 Urgency around exploitation
 ---------------------------
 
@@ -117,6 +124,13 @@ trust. How can users' trust mean anything if they can't `understand what
 software is doing on their behalf?`_. In 2019, I'd like to see a new focus on
 making our products better understood, both by communicating better, and by
 simplifying their behavior.
+
+Success criteria:
+
+* Op-Eds, papers, and blog posts discussing how well software is living up to
+  its responsibility to act on users' behalves.
+* At least one major product announces a substantial functionality change as a
+  result.
 
 .. _`five projects I thought were very important for advancing the state of computer security`: https://alexgaynor.net/2015/nov/28/5-critical-security-projects/
 .. _`scourge of memory corruption`: https://twitter.com/LazyFishBarrel
