@@ -114,7 +114,9 @@ Facebook know to show me an ad for that?"
 
 The ultimate purpose of security is to build systems that are worthy of our
 trust. How can users' trust mean anything if they can't `understand what
-software is doing on their behalf?`_.
+software is doing on their behalf?`_. In 2019, I'd like to see a new focus on
+making our products better understood, both by communicating better, and by
+simplifying their behavior.
 
 .. _`five projects I thought were very important for advancing the state of computer security`: https://alexgaynor.net/2015/nov/28/5-critical-security-projects/
 .. _`scourge of memory corruption`: https://twitter.com/LazyFishBarrel
