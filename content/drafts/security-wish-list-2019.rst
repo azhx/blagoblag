@@ -7,8 +7,8 @@ reasonably pleased to find that all are having real positive impacts and none
 turned out to be busts. So I decided to take a stab at writing down the things I
 *want* to see happen in 2019, in the hopes that the universe will provide a few
 of them. I've attempted to make each of these be something that could
-realistically be accomplished in a year, and I've tried to include some success
-criteria for each one. They are in no particular order.
+realistically be accomplished in a year, and I've include some success criteria
+for each one. They are in no particular order.
 
 Rust breakthrough
 -----------------
