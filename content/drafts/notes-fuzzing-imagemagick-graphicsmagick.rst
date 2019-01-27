@@ -12,8 +12,8 @@ this. Hanno Böck [#]_ observed: "In the past it was pretty easy to fuzz bugs in
 imagemagick, but after some review by Google most of them have been fixed and
 these days there are at least no more trivial to find fuzzing issues." Despite
 this, within hours of adding each project to OSS-Fuzz it was finding security
-issues. Between the two projects it has found more than 425 security issues of
-various severities, and it continues to ocassionally find new ones.
+issues. Between the two projects it has found more than `425 security issues`_
+of various severities, and it continues to occasionally find new ones.
 
 Given the gaping chasm between what was expected and the massive success of
 OSS-Fuzz on ImageMagick and GraphicsMagick I thought it would be helpful to
@@ -84,6 +84,7 @@ preventable root cause, it's time to reconsider what we're doing.
 .. [#] I don't want to pick on Hanno, this post is about how good OSS-Fuzz is, not how bad everyone else is. He just happened to have a quote that captured this well.
 
 .. _`Paul Kehrer`: https://langui.sh/
+.. _`425 security issues`: https://bugs.chromium.org/p/oss-fuzz/issues/list?can=1&q=status%3AVerified+Type%3ABug-Security+label%3AProj-imagemagick%2CProj-graphicsmagick&sort=-modified&colspec=ID+Type+Component+Status+Library+Reported+Owner+Summary+Modified&x=type&y=proj&cells=counts
 .. _`Chris Evans demonstrated`: https://scarybeastsecurity.blogspot.com/2017/05/bleed-continues-18-byte-file-14k-bounty.html
 .. _`include it in OSS-Fuzz`: https://github.com/google/oss-fuzz/blob/master/docs/ideal_integration.md
 .. _`pay you a bounty`: https://security.googleblog.com/2017/05/oss-fuzz-five-months-later-and.html
