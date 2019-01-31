@@ -42,7 +42,7 @@ will incorporate the fix and proceed.
 **Automated** OSS-Fuzz automatically files tickets for each bug it finds, and
 tracks when they are fixed. This means crashers never slip through the cracks
 and reproducers never get lost; the issue tracker always knows the state of
-every bug its encountered. It can also easily catch if a bug regresses.
+every bug it has encountered. It can also easily catch if a bug regresses.
 
 **MSAN** Most fuzzing these days happens with ASAN, which means things like
 use-after-free and buffer-overflows are caught. However, ASAN doesn't catch use
