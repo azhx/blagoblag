@@ -23,7 +23,7 @@ vulnerabilities and other bugs:
 **Scale** OSS-Fuzz leverages Google's massive server farms to bring serious
 compute to bear on fuzzing. The last time I attempted to measure, it looked
 like they were running something like 30 CPU cores per fuzz target. Further,
-lots of past fuzzing of ImageMagick and GraphicsMagick was done using AFL,
+while lots of past fuzzing of ImageMagick and GraphicsMagick was done using AFL,
 OSS-Fuzz uses libFuzzer which gives the potential for higher executions per
 second. This gives them the ability to find bugs that take many iterations to
 show up. Finally, for ImageMagick and GraphicsMagick we generate one fuzz
