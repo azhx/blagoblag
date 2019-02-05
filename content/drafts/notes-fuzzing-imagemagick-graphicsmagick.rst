@@ -13,7 +13,7 @@ imagemagick, but after some review by Google most of them have been fixed and
 these days there are at least no more trivial to find fuzzing issues." Despite
 this, within hours of adding each project to OSS-Fuzz it was finding security
 issues. Between the two projects it has found more than `425 security issues`_
-of various severities, and it continues to occasionally find new ones.
+of various severities [#]_, and it continues to occasionally find new ones.
 
 Given the gaping chasm between what was expected and the massive success of
 OSS-Fuzz on ImageMagick and GraphicsMagick I thought it would be helpful to
@@ -27,8 +27,9 @@ lots of past fuzzing of ImageMagick and GraphicsMagick was done using AFL,
 OSS-Fuzz uses libFuzzer which gives the potential for higher executions per
 second. This gives them the ability to find bugs that take many iterations to
 show up. Finally, for ImageMagick and GraphicsMagick we generate one fuzz
-target per decoder. Each has more than 100 decoders, and OSS-Fuzz runs them
-all, this is an amount of compute that is well beyond what's accessible to
+target per decoder. Each has more than 100 decoders (including many that
+leverage third party libraries such as libpng or libjpeg), and OSS-Fuzz runs
+them all, this is an amount of compute that is well beyond what's accessible to
 most folks.
 
 **Continuous** OSS-Fuzz builds an updated copy of the project every day, and it
@@ -82,6 +83,7 @@ When we're finding hundreds and thousands of vulnerabilities that all have a
 preventable root cause, it's time to reconsider what we're doing.
 
 .. [#] I don't want to pick on Hanno, this post is about how good OSS-Fuzz is, not how bad everyone else is. He just happened to have a quote that captured this well.
+.. [#] This includes bugs discovered in "delegate" libraries such as LibRaw or libheif.
 
 .. _`Paul Kehrer`: https://langui.sh/
 .. _`425 security issues`: https://bugs.chromium.org/p/oss-fuzz/issues/list?can=1&q=status%3AVerified+Type%3ABug-Security+label%3AProj-imagemagick%2CProj-graphicsmagick&sort=-modified&colspec=ID+Type+Component+Status+Library+Reported+Owner+Summary+Modified&x=type&y=proj&cells=counts
